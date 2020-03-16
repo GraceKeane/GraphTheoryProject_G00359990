@@ -11,5 +11,7 @@ The Thompsons construction algorithm works by splitting an expression into its c
 
 Automaton fragments => https://github.com/GraceKeane/Automaton-fragments                                                                    
 
-Shunting yard algorithm => https://github.com/GraceKeane/Shunting-yard-algorithm                                                                                                                                                                                                                                                                                                                                                                                                                                                                              Using Python => https://github.com/GraceKeane/Python
+Shunting yard algorithm => https://github.com/GraceKeane/Shunting-yard-algorithm                                                                
+
+Using Python => https://github.com/GraceKeane/Python
 
