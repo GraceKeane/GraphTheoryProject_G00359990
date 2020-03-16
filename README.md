@@ -13,5 +13,7 @@ Automaton fragments => https://github.com/GraceKeane/Automaton-fragments
 
 Shunting yard algorithm => https://github.com/GraceKeane/Shunting-yard-algorithm                                                                
 
-Using Python => https://github.com/GraceKeane/Python
+Using Python => https://github.com/GraceKeane/Python                                                                                              
+
+Classes for Thompson => https://github.com/GraceKeane/Classes-for-Thompsons-algorithm
 
