@@ -17,5 +17,7 @@ Shunting yard algorithm => https://github.com/GraceKeane/Shunting-yard-algorithm
 
 Using Python => https://github.com/GraceKeane/Python                                                                                              
 
+Matching a regular expression with a string => https://github.com/GraceKeane/Python-Matching
+
 Classes for Thompson => https://github.com/GraceKeane/Classes-for-Thompsons-algorithm
 
