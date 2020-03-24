@@ -21,3 +21,6 @@ Matching a regular expression with a string => https://github.com/GraceKeane/Pyt
 
 Classes for Thompson => https://github.com/GraceKeane/Classes-for-Thompsons-algorithm
 
+
+Cleaning & testing => https://github.com/GraceKeane/Cleaning-Testing
+
