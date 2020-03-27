@@ -5,9 +5,8 @@
 # Python 3.7
 
 class State:
-    """ Doc string comment - Comments multiple lines at once.
-    A state with one or two edges , all edges labelled by label
-    """
+    # Doc string comment - Comments multiple lines at once.
+    """ A state with one or two edges , all edges labelled by label """
 
     # Constructor
     def __init__(self, label=None, edges=[]):
@@ -28,7 +27,7 @@ class Fragment:
 
 def shunt(infix):
     # Doc string - string inside class/ function
-    """ Return the infix regular expression in postfix """
+    """ Return the infix regular expression to postfix """
     infix = list(infix)[::-1]
 
     # Operator stack
@@ -40,7 +39,7 @@ def shunt(infix):
     # Operator precidence * - . - |
     prec = {'*': 100, '.': 80, '|': 60, ')': 40, '(': 20}
 
-    # Loop through the input one character at a time
+    # Loop through the input, one character at a time
     while infix:
         # Pop a character from the list
         c = infix.pop() # Removes the last element in infix as a list & returns whatever is poped off
@@ -127,13 +126,13 @@ def compile(infix):
     # The NFA stack should have exactly one NFA on it
     return nfa_stack.pop()
 
-# Add a state to a set and follow all of the e arrows
+# Add a state to a set and follow all of the e(psilon) arrows
 def followes(state, current):
-    # Only do something when we haven't already seen the state
+    # Only do something when haven't already seen the state
     if state not in current:
     # Put the state itself into current
         current.add(state)
-        # See whether state is labeled by e (epsilon)
+        # See whether state is labeled by e(epsilon)
         # Epsilon = empty string
         if state.label is None:
             # Loop through the states pointed by this state
@@ -160,7 +159,7 @@ def match(regex, s):
     for c in s:
         # Keep track of where you were
         previous = current
-        # Create a new empty set for states we're about to be in
+        # Create a new empty set for the states we're about to be in
         current = set()
         # Loop through the previous states
         for state in previous:
@@ -174,7 +173,7 @@ def match(regex, s):
     # Ask the NFA if it matches the string s
     return nfa.accept in current
 
-# Test
+# Testing
 if __name__ == "__main__":
     tests = [
             ["a.b|b*", "bbbbbb", True],
@@ -184,7 +183,8 @@ if __name__ == "__main__":
             # Matching the empty string
             ["b*", "", True]
     ]
-
+    
+    # Printing out an error message
     for test in tests:
         assert match(test[0], test[1]) == test[2], test[0] + \
         (" should match " if test[2] else " should not match ")+ test[1]
