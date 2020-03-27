@@ -218,3 +218,15 @@ if __name__ == "__main__":
         (" should match -> " if test[2] else " should not match ")+ \
         test[1]
 
+# Testing infix to postfix - needes more work
+"""
+infix1 = [
+    # Infix #Postfix
+    'a.b|b', #a.bb   
+    ]
+
+for opers in infix1:
+    postfix1 = postfix(opers)
+
+    print("Infix Expression:", infix1, "Postfix", postfix)
+"""
