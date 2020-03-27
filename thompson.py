@@ -6,7 +6,9 @@
 
 class State:
     # Doc string comment - Comments multiple lines at once.
-    """ A state with one or two edges , all edges labelled by label """
+    """State function -> returnes a state with one or
+    two edges , all edges labelled by label
+    """
 
     # Constructor
     def __init__(self, label=None, edges=[]):
@@ -16,7 +18,9 @@ class State:
         self.label = label
 
 class Fragment:
-    """ An NFA fragment with a start state and an accept state """
+    """Fragment function -> returnes an NFA fragment
+    with a start state and an accept state
+    """
 
     # Constructor
     def __init__(self, start, accept):
@@ -27,7 +31,10 @@ class Fragment:
 
 def shunt(infix):
     # Doc string - string inside class/ function
-    """ Return the infix regular expression to postfix """
+    """Shunt function -> returnes the infix regular
+    expression to postfix
+    """
+
     infix = list(infix)[::-1]
 
     # Operator stack
@@ -75,7 +82,10 @@ def shunt(infix):
 
 
 def compile(infix):
-    """ Return an NFA fragment representing the infix regular expression """
+    """Compile function -> returnes an NFA fragment
+    representing the infix regular expression
+    """
+
     # Convert infix to postfix
     postfix = shunt(infix)
     # Make postfix a stack of characters
@@ -126,8 +136,11 @@ def compile(infix):
     # The NFA stack should have exactly one NFA on it
     return nfa_stack.pop()
 
-# Add a state to a set and follow all of the e(psilon) arrows
 def followes(state, current):
+    """Followes function -> adds a state to a set and then
+    follows all of the e(psilon) arrows
+    """
+
     # Only do something when haven't already seen the state
     if state not in current:
     # Put the state itself into current
@@ -141,8 +154,10 @@ def followes(state, current):
                 followes(x, current)
 
 def match(regex, s):
-    # This function will return true if the regular expression
-    # regex fully matches the string s. It returns false otherwise
+    """Match function -> this  function will return true
+    if the regular expression, regex fully matches the string s.
+    It returns false otherwise
+    """
 
     # Compile the regular expression into an NFA
     nfa = compile(regex)
@@ -173,7 +188,10 @@ def match(regex, s):
     # Ask the NFA if it matches the string s
     return nfa.accept in current
 
-# Testing
+"""Testing does the regular expression match the string
+specified. Retures true or false.
+"""
+# Testing tripple list (Regular expression, string, boolean)
 if __name__ == "__main__":
     tests = [
             ["a.b|b*", "bbbbbb", True],
@@ -181,11 +199,22 @@ if __name__ == "__main__":
             ["a.b", "ab", True],
             ["b**", "b", True],
             # Matching the empty string
-            ["b*", "", True]
+            ["b*", "", True],
+
+            # Extra tests
+            ["A", "A", True],
+            ["B","B", True],
+            ["a.c|c*", "cccccc", True],
+            ["c**", "c", True],
+            ["a.b|c*", "dggfdert", False],
     ]
     
-    # Printing out an error message
+    """Error message returnes the regular expression and the
+    correct string that matches that exact regular expression
+    """
     for test in tests:
+        # Error message
         assert match(test[0], test[1]) == test[2], test[0] + \
-        (" should match " if test[2] else " should not match ")+ test[1]
+        (" should match -> " if test[2] else " should not match ")+ \
+        test[1]
 
