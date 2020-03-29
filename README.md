@@ -15,12 +15,12 @@ This project can be run as follows from the command line "thompson.py" ommitting
 
 ## Architecture
 
-## What I learned
-. The syntax for regular expressions
-. How a regex engine works
-. How to understand the internals of the google cloud SSH emgine
-. How to break a complex problem into smaller problems
-. Different ways of thinking about the problem
+## What I learned 
+* The syntax for regular expressions
+* How a regex engine works
+* How to understand the internals of the google cloud SSH emgine
+* How to break a complex problem into smaller problems
+* Different ways of thinking about the problem
 
 ## Research links
 Additional ways of implementing infix to postfix - https://www.youtube.com/watch?v=cD6qkvOYL_o&t=15s
