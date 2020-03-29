@@ -49,7 +49,8 @@ def shunt(infix):
     # Loop through the input, one character at a time
     while infix:
         # Pop a character from the list
-        c = infix.pop() # Removes the last element in infix as a list & returns whatever is poped off
+        c = infix.pop() # Removes the last element in infix as a list
+                        # & returns whatever is poped off
 
         if c == '(':
             # Push an open bracket to the stack
@@ -127,7 +128,10 @@ def compile(infix):
         else:
             accept = State()
             start = State(label=c, edges=[accept])
-                   
+
+        # Testing does function break up parts from high to low prefix correctly 
+        print("PREFIX TEST ->", "INFIX = ", infix, "PREFIX =", postfix)
+
         # Create new instance of Fragment to represent the new NFA 
         newfrag = Fragment(start, accept)
         # Push new nfa to the stack
@@ -218,15 +222,11 @@ if __name__ == "__main__":
         (" should match -> " if test[2] else " should not match ")+ \
         test[1]
 
-# Testing infix to postfix - needes more work
-"""
-infix1 = [
-    # Infix #Postfix
-    'a.b|b', #a.bb   
+# Adapted my learning from https://www.youtube.com/watch?v=cD6qkvOYL_o&t=15s
+infix = [
+    #Infix      #Postfix 
+    'A*B+C',    # AB*C+
     ]
 
-for opers in infix1:
-    postfix1 = postfix(opers)
+print("TESTING INFIX TO POSTFIX NOTATION ","INFIX ->  ", infix, "POSTFIX ->", shunt(infix))
 
-    print("Infix Expression:", infix1, "Postfix", postfix)
-"""
