@@ -8,6 +8,50 @@ Python has well-defined rules for specifying the order in which the operators in
 
 The Thompsons construction algorithm works by splitting an expression into its constituent subexpressions. This algorithm is created by a computer scientist called Kem Thompson.
 
+For this project I am instructed to implement thompson's construction algorithm to determine does a given regular expression match the string assigned.
+
+## How my application works
+This project can be run as follows from the command line "thompson.py" ommitting the quotes. Another class "testing.py" is used as a module so it can import thompson.py. It matches infix regular expressions to strings. The class "project.py" is an additional class of more research done on how to parse a regular expression from infix to postfix.
+
+## Architecture
+
+## What I learned
+. The syntax for regular expressions
+. How a regex engine works
+. How to understand the internals of the google cloud SSH emgine
+. How to break a complex problem into smaller problems
+. Different ways of thinking about the problem
+
+## Research links
+Additional ways of implementing infix to postfix - https://www.youtube.com/watch?v=cD6qkvOYL_o&t=15s
+Describing what a regular expression is essentially - https://en.wikipedia.org/wiki/Regular_language
+Research of what Thompson's construction consists of - https://en.wikipedia.org/wiki/Thompson%27s_construction
+Describing what an NFA is essentially - https://en.wikipedia.org/wiki/Nondeterministic_finite_automaton
+Implementing a regular expression engine - https://deniskyashif.com/2019/02/17/implementing-a-regular-expression-engine/
+Infix to postfix - algorithm - https://www.youtube.com/watch?v=yTpzVWO1Dis
+Stack, infix and postfix research - https://www.geeksforgeeks.org/stack-set-2-infix-to-postfix/
+
+## Problems faced & overcome
+I had problems submitting my code to git. Usually when I committed my code it published numerous files to my GitHub repository that I did not need. I then I had to delete them all again. I researched ways on how to commit my code correctly using git and I found this video helped me a lot. It showed me how to commit the changes that I needed to GitHub with the use of branches and then merging to the master branch.   
+
+1.	Git branch myBranchName (Creating a new branch)
+2.	Git branch (Displaying all branches created)
+3.	Git checkout myBranchName (Switches to the new branch created)
+4.	Git add .
+5.	Git commit -m “Comments go here”
+6.	Git push --set-upstream origin branch1
+7.	Enter username
+8.	Enter password
+9.	Go to your repository on www.github.com
+10.	Click “Compare & pull request”
+11.	Click “Create pull request”
+12.	Click “Merge pull request”
+13.	Click “Confirm merge”
+
+Research link - https://www.youtube.com/watch?v=JTE2Fn_sCZs
+
+
+## Class videos implemented
 Introduction to Python => https://github.com/GraceKeane/GraphTheory
 
 
