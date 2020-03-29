@@ -125,6 +125,11 @@ def compile(infix):
             start = State(edges=[frag.start, accept])
             # Point the arrows
             frag.accept.edges = [frag.start, accept]
+        elif c == '+':
+            frag1 = nfa_stack.pop()
+            frag2 = nfa_stack.pop()
+            start = State (edges=[frag2.start, frag1.start])
+            
         else:
             accept = State()
             start = State(label=c, edges=[accept])
@@ -197,6 +202,7 @@ specified. Retures true or false.
 """
 # Testing tripple list (Regular expression, string, boolean)
 if __name__ == "__main__":
+
     tests = [
             ["a.b|b*", "bbbbbb", True],
             ["a.b|b*", "bbx", False],
@@ -210,17 +216,17 @@ if __name__ == "__main__":
             ["B","B", True],
             ["a.c|c*", "cccccc", True],
             ["c**", "c", True],
-            ["a.b|c*", "dggfdert", False],
+            ["a.b|c*", "dggfdert", False] 
     ]
-    
-    """Error message returnes the regular expression and the
-    correct string that matches that exact regular expression
-    """
-    for test in tests:
-        # Error message
-        assert match(test[0], test[1]) == test[2], test[0] + \
-        (" should match -> " if test[2] else " should not match ")+ \
-        test[1]
+
+"""Error message returnes the regular expression and the
+correct string that matches that exact regular expression
+"""
+for test in tests:
+    # Error message
+    assert match(test[0], test[1]) == test[2], test[0] + \
+    (" should match -> " if test[2] else " should not match ")+ \
+    test[1]
 
 # Adapted my learning from https://www.youtube.com/watch?v=cD6qkvOYL_o&t=15s
 infix = [
@@ -228,5 +234,5 @@ infix = [
     'A*B+C',    # AB*C+
     ]
 
-print("TESTING INFIX TO POSTFIX NOTATION ","INFIX ->  ", infix, "POSTFIX ->", shunt(infix))
+print("TESTING INFIX TO POSTFIX NOTATION ","INFIX ->  ", infix, "POSTFIX ->")
 
