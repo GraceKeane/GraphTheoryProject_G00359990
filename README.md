@@ -23,6 +23,16 @@ This project can be run as follows from the command line "thompson.py" ommitting
 * Different ways of thinking about the problem
 * Differance between regular expressions
 
+## Differant regular expressions research
+? - Matches the preceding element zero or one time. For example, ab?c matches only "ac" or "abc".
++ - Matches the preceding element one or more times. For example, ab+c matches "abc", "abbc", "abbbc", and so on, but not "ac".
+| - The choice operator matches either the expression before or the expression after the operator. For example, abc|def matches "abc" or "def".
+^ - it matches the starting position of any line.
+. - Matches any single character. the dot character matches a literal dot. For example, a.c matches "abc", etc., but [a.c] matches only "a", ".", or "c".
+$ - Matches the ending position of the string or the position just before a string-ending newline. 
+() - Defines a marked subexpression
+* - Matches the preceding element zero or more times. For example, ab*c matches "ac", "abc", "abbbc",
+
 ## Research links
 * Additional ways of implementing infix to postfix in python (Title - Infix to postfix in python) - https://www.youtube.com/watch?v=cD6qkvOYL_o&t=15s
 * Describing what a regular expression is essentially (Title - Regular language) - https://en.wikipedia.org/wiki/Regular_language
