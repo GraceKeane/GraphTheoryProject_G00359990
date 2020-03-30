@@ -18,7 +18,7 @@ This project can be run as follows from the command line "thompson.py" ommitting
 ## What I learned 
 * The syntax for regular expressions
 * How a regex engine works
-* How to understand the internals of the google cloud SSH emgine
+* How to understand the internals of the google cloud SSH engine
 * How to break a complex problem into smaller problems
 * Different ways of thinking about the problem
 * Differance between Plus, minus, times, power off, or, kleene star, question and end.
