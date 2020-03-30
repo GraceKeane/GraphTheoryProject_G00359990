@@ -4,6 +4,9 @@
 # Thompsons construction algorithm using python
 # Python 3.7
 
+# Main project class 
+# finaltesting.py tests this class
+
 class State:
     # Doc string comment - Comments multiple lines at once.
     """State function -> returnes a state with one or
@@ -157,9 +160,6 @@ def compile(infix):
             accept = State()
             start = State(label=c, edges=[accept])
 
-        # Testing does function break up parts from high to low prefix correctly 
-        print("PREFIX TEST ->", "INFIX = ", infix, "PREFIX =", postfix)
-
         # Create new instance of Fragment to represent the new NFA 
         newfrag = Fragment(start, accept)
         # Push new nfa to the stack
@@ -219,56 +219,4 @@ def match(regex, s):
                     
     # Ask the NFA if it matches the string s
     return nfa.accept in current
-
-"""Testing does the regular expression match the string
-specified. Retures true or false.
-"""
-# Testing tripple list (Regular expression, string, boolean)
-if __name__ == "__main__":
-
-    tests = [
-            ["a.b|b*", "bbbbbb", True], # Should match
-            ["a.b|b*", "bbx", False], # Should not match
-            ["a.b", "ab", True], # Should match
-            ["b**", "b", True], # Should match
-            ["b*", "", True], # Should match
-
-            # Extra tests
-            ["A", "A", True], # Should match
-            ["B","B", True], # Should match
-            ["a.c|c*", "cccccc", True], # Should match
-            ["c**", "c", True], # Should match
-            ["a.b|c*", "dggfdert", False], # Should not match
-            ["ab+c", "ac", False], # Should not match
-            ["a+", "", False], # Should not match
-            ["b+", "b", True], # Should match
-            
-            # Testing plus operator (+)
-            ["a+", "", False], # Should not match
-            ["b+", "c", False], # Should match
-            ["ab+", "c", False], # Should not match
-            ["c+", "cc", True], # Should match
-
-            # Testing question operator (?)
-            ["a?", "", True], # Should match
-            ["b?", "b", True], # Should match
-            ["a?", "abcd", False], # Should not match
-            ["abc?", "abv", False] # Should not match
-    ]
-
-"""Error message returnes the regular expression and the
-correct string that matches that exact regular expression
-"""
-for test in tests:
-    # Error message
-    assert match(test[0], test[1]) == test[2], test[0] + \
-    (" should match -> " if test[2] else " should not match ")+ \
-    test[1]
-
-# Adapted my learning from https://www.youtube.com/watch?v=cD6qkvOYL_o&t=15s
-infix = [
-    #Infix      #Postfix 
-    'A*B+C',    # AB*C+
-    ]
-
 
