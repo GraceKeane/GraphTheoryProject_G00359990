@@ -98,6 +98,7 @@ def compile(infix):
     while postfix:
         # Pop a character from postfix
         c = postfix.pop()
+        # Concatenate operator - Matches any single character
         if c == '.':
             # Pop two fragments off the stack
             frag1 = nfa_stack.pop()
@@ -108,7 +109,8 @@ def compile(infix):
             start = frag2.start
             # The new accept state is frag1's
             accept = frag1.accept
-        elif c == '|':
+        # Or operator -  expression before or the expression after
+        elif c == '|':  
             # Pop two fragments off the stack
             frag1 = nfa_stack.pop()
             frag2 = nfa_stack.pop()
@@ -118,6 +120,7 @@ def compile(infix):
             # Point the old accept state at the new accept state
             frag2.accept.edges.append(accept)
             frag1.accept.edges.append(accept)
+        # Kleene star operator - Zero or more
         elif c == '*':
             # Pop a single fragment off the stack
             frag = nfa_stack.pop()
@@ -125,11 +128,31 @@ def compile(infix):
             start = State(edges=[frag.start, accept])
             # Point the arrows
             frag.accept.edges = [frag.start, accept]
+        # Plus operator - One or more
         elif c == '+':
-            frag1 = nfa_stack.pop()
-            frag2 = nfa_stack.pop()
-            start = State (edges=[frag2.start, frag1.start])
-            
+            # Pop the last fragment off the stack
+            frag = nfa_stack.pop()
+            # Create a new accept state
+            accept = State()
+            # Create a new start state
+            start = State(edges=[frag.start])
+            # Point at the start state
+            frag.accept.edges.append(frag.start)
+            # Point the old accept state at the new accept state
+            frag.accept.edges.append(accept)
+        # Question operator - Zero or one
+        elif c == '?':
+            # Pop the last fragment off the stack
+            frag = nfa_stack.pop()
+            # Create a new accept state
+            accept = State()
+            # Pop a single fragment off the stack
+            start = State(edges=[frag.start, accept])
+            # Point to accept state
+            frag.start.edges.append(frag.accept)
+            # Point the old accept state at the new accept state
+            frag.accept.edges.append(accept)
+        
         else:
             accept = State()
             start = State(label=c, edges=[accept])
@@ -204,19 +227,33 @@ specified. Retures true or false.
 if __name__ == "__main__":
 
     tests = [
-            ["a.b|b*", "bbbbbb", True],
-            ["a.b|b*", "bbx", False],
-            ["a.b", "ab", True],
-            ["b**", "b", True],
-            # Matching the empty string
-            ["b*", "", True],
+            ["a.b|b*", "bbbbbb", True], # Should match
+            ["a.b|b*", "bbx", False], # Should not match
+            ["a.b", "ab", True], # Should match
+            ["b**", "b", True], # Should match
+            ["b*", "", True], # Should match
 
             # Extra tests
-            ["A", "A", True],
-            ["B","B", True],
-            ["a.c|c*", "cccccc", True],
-            ["c**", "c", True],
-            ["a.b|c*", "dggfdert", False] 
+            ["A", "A", True], # Should match
+            ["B","B", True], # Should match
+            ["a.c|c*", "cccccc", True], # Should match
+            ["c**", "c", True], # Should match
+            ["a.b|c*", "dggfdert", False], # Should not match
+            ["ab+c", "ac", False], # Should not match
+            ["a+", "", False], # Should not match
+            ["b+", "b", True], # Should match
+            
+            # Testing plus operator (+)
+            ["a+", "", False], # Should not match
+            ["b+", "c", False], # Should match
+            ["ab+", "c", False], # Should not match
+            ["c+", "cc", True], # Should match
+
+            # Testing question operator (?)
+            ["a?", "", True], # Should match
+            ["b?", "b", True], # Should match
+            ["a?", "abcd", False], # Should not match
+            ["abc?", "abv", False] # Should not match
     ]
 
 """Error message returnes the regular expression and the
@@ -234,5 +271,4 @@ infix = [
     'A*B+C',    # AB*C+
     ]
 
-print("TESTING INFIX TO POSTFIX NOTATION ","INFIX ->  ", infix, "POSTFIX ->")
 
