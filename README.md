@@ -56,6 +56,8 @@ Research link - https://www.youtube.com/watch?v=JTE2Fn_sCZs
 
 
 ## Class videos implemented
+# I implemented the code from the videos separately so that I can see how the application can be broken up into smaller parts
+
 Introduction to Python => https://github.com/GraceKeane/GraphTheory
 
 
