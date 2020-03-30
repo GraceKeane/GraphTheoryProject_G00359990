@@ -29,7 +29,9 @@ Research of what Thompson's construction consists of (Title - Thompson's constru
 Describing what an NFA is essentially (Title - Nondeterministic finite automaton) - https://en.wikipedia.org/wiki/Nondeterministic_finite_automaton
 How to implementing a regular expression engine (Title - Implementing a Regular Expression Engine) - https://deniskyashif.com/2019/02/17/implementing-a-regular-expression-engine/
 Infix to postfix algorithm (Title - infix to postfix - algorithm and exercises) - https://www.youtube.com/watch?v=yTpzVWO1Dis
-Stack, infix and postfix research (Title - Stack | set 2 (infix to postfix)) - https://www.geeksforgeeks.org/stack-set-2-infix-to-postfix/
+Stack, infix and postfix research (Title - Stack | set 2 (infix to postfix)) - https://www.geeksforgeeks.org/stack-set-2-infix-to-postfix/ 
+Research of what the Kleene star is essentially (Title - Kleene star) - https://en.wikipedia.org/wiki/Kleene_star
+What a Unary operation is essentially (Title - Unary operation) - https://en.wikipedia.org/wiki/Unary_operation
 
 ## Problems faced & overcome
 I had problems submitting my code to git. Usually when I committed my code it published numerous files to my GitHub repository that I did not need. I then I had to delete them all again. I researched ways on how to commit my code correctly using git and I found this video helped me a lot. It showed me how to commit the changes that I needed to GitHub with the use of branches and then merging to the master branch.   
