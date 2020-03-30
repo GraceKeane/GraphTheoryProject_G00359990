@@ -24,16 +24,16 @@ This project can be run as follows from the command line "thompson.py" ommitting
 * Differance between regular expressions
 
 ## Research links
-Additional ways of implementing infix to postfix in python (Title - Infix to postfix in python) - https://www.youtube.com/watch?v=cD6qkvOYL_o&t=15s
-Describing what a regular expression is essentially (Title - Regular language) - https://en.wikipedia.org/wiki/Regular_language
-Research of what Thompson's construction consists of (Title - Thompson's construction) -https://en.wikipedia.org/wiki/Thompson%27s_construction
-Describing what an NFA is essentially (Title - Nondeterministic finite automaton) - https://en.wikipedia.org/wiki/Nondeterministic_finite_automaton
-How to implementing a regular expression engine (Title - Implementing a Regular Expression Engine) - https://deniskyashif.com/2019/02/17/implementing-a-regular-expression-engine/
-Infix to postfix algorithm (Title - infix to postfix - algorithm and exercises) - https://www.youtube.com/watch?v=yTpzVWO1Dis
-Stack, infix and postfix research (Title - Stack | set 2 (infix to postfix)) - https://www.geeksforgeeks.org/stack-set-2-infix-to-postfix/ 
-Research of what the Kleene star is essentially (Title - Kleene star) - https://en.wikipedia.org/wiki/Kleene_star
-What a Unary operation is essentially (Title - Unary operation) - https://en.wikipedia.org/wiki/Unary_operation
-More research on regylar expressions (Regular expressions) - https://en.wikipedia.org/wiki/Regular_expression
+* Additional ways of implementing infix to postfix in python (Title - Infix to postfix in python) - https://www.youtube.com/watch?v=cD6qkvOYL_o&t=15s
+* Describing what a regular expression is essentially (Title - Regular language) - https://en.wikipedia.org/wiki/Regular_language
+* Research of what Thompson's construction consists of (Title - Thompson's construction) -https://en.wikipedia.org/wiki/Thompson%27s_construction
+* Describing what an NFA is essentially (Title - Nondeterministic finite automaton) - https://en.wikipedia.org/wiki/Nondeterministic_finite_automaton
+* How to implementing a regular expression engine (Title - Implementing a Regular Expression Engine) - https://deniskyashif.com/2019/02/17/implementing-a-regular-expression-engine/
+* Infix to postfix algorithm (Title - infix to postfix - algorithm and exercises) - https://www.youtube.com/watch?v=yTpzVWO1Dis
+* Stack, infix and postfix research (Title - Stack | set 2 (infix to postfix)) - https://www.geeksforgeeks.org/stack-set-2-infix-to-postfix/ 
+* Research of what the Kleene star is essentially (Title - Kleene star) - https://en.wikipedia.org/wiki/Kleene_star
+* What a Unary operation is essentially (Title - Unary operation) - https://en.wikipedia.org/wiki/Unary_operation
+* More research on regylar expressions (Regular expressions) - https://en.wikipedia.org/wiki/Regular_expression
 
 ## Problems faced & overcome
 I had problems submitting my code to git. Usually when I committed my code it published numerous files to my GitHub repository that I did not need. I then I had to delete them all again. I researched ways on how to commit my code correctly using git and I found this video helped me a lot. It showed me how to commit the changes that I needed to GitHub with the use of branches and then merging to the master branch.   
