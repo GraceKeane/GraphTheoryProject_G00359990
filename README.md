@@ -21,7 +21,7 @@ This project can be run as follows from the command line "thompson.py" ommitting
 * How to understand the internals of the google cloud SSH engine
 * How to break a complex problem into smaller problems
 * Different ways of thinking about the problem
-* Differance between Plus, minus, times, power off, or, kleene star, question and end.
+* Differance between regular expressions
 
 ## Research links
 Additional ways of implementing infix to postfix in python (Title - Infix to postfix in python) - https://www.youtube.com/watch?v=cD6qkvOYL_o&t=15s
