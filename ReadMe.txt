@@ -24,6 +24,7 @@ This project can be run as follows from the command line "thompson.py" ommitting
 * How to break a complex problem into smaller problems
 * Different ways of thinking about the problem
 * Differance between regular expressions
+* How to create a README using Visual studio code
 
 ## Differant regular expressions research
 [ ? ] - Matches the preceding element zero or one time. For example, ab?c matches only "ac" or "abc".
