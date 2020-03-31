@@ -98,4 +98,3 @@ Cleaning & testing => https://github.com/GraceKeane/Cleaning-Testing
 ## Technologies used
 * Google cloud SSH engine
 * Python V 3.7
-* GitHub
