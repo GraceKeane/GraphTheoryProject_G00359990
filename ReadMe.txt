@@ -1,4 +1,5 @@
 # GraphTheoryProject_G00359990 - Grace Keane
+# Visual Studio Code README
 
 Thompsons construction is a method of transforming a regular expression into an equivalent nondeterministic finite automaton (NFA). NFAs can be used to match strings against the regular expression. NFA is short for non-deterministic finite automaton, It was designed and implemented by Michael O. Rabin and Dana Scott. NFA’s are designed to only recognise regular languages.
 
@@ -26,7 +27,7 @@ For this project I am instructed to implement thompson's construction algorithm 
 * Different ways of thinking about the problem
 * Differance between regular expressions
 * How to create a README using Visual studio code
-* How to create and merge braches in GitHub
+
 
 ## Differant regular expressions research
 [ ? ] - Matches the preceding element zero or one time. For example, ab?c matches only "ac" or "abc".
@@ -101,4 +102,4 @@ Cleaning & testing => https://github.com/GraceKeane/Cleaning-Testing
 
 ## Technologies used
 * Google cloud SSH engine
-* Python V 3.7
+

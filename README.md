@@ -10,19 +10,23 @@ The Thompsons construction algorithm works by splitting an expression into its c
 
 For this project I am instructed to implement thompson's construction algorithm to determine does a given regular expression match the string assigned.
 
-## How my application works
-This project can be run as follows from the command line "thompson.py" ommitting the quotes. Another class "testing.py" is used as a module so it can import thompson.py. It matches infix regular expressions to strings. The class "project.py" is an additional class of more research done on how to parse a regular expression from infix to postfix.
-
 ## Architecture
-
+* "thompson.py" - The class thompson.py contains all the rules for this project to work. It stores important functions which are used to determine does a certain regular expression match a given string. 
+* "testing.py" - This class used as a module so it can import thompson.py. It matches infix regular expressions to strings, the data in this class has been hardcoded in. 
+* "prompt.py" - I have developed a class that allows for user input. When a  regular expression and a string is entered, the program then (by the help of the import keyword) follows the rules applied in "thompson.py" and detremines does the regular expression match the string specified. 
+* "project.py" - I added an additional class called "project.py" that shows a differant way to parse a regular expression from infix to postfix. I followed a youtube video to do this. [Link](https://www.youtube.com/watch?v=cD6qkvOYL_o&t=15s)
+* "finaltesting.py" - This class contains more tests relating to regular expressions and strings it imports "thompson.py" to do so. It carries out numerous tests using the assert keyword to test every operator e.g. | . * + ?
+* "ReadMe.txt" - I created a README using visual studio code
 
 ## What I learned 
 * The syntax for regular expressions
 * How a regex engine works
-* How to understand the internals of the google cloud SSH engine
+* How to understand the internals of the Google Cloud SSH engine
 * How to break a complex problem into smaller problems
 * Different ways of thinking about the problem
 * Differance between regular expressions
+* How to create a README using Visual studio code
+* How to create and merge braches in GitHub
 
 ## Differant regular expressions research
 [ ? ] - Matches the preceding element zero or one time. For example, ab?c matches only "ac" or "abc".
@@ -57,7 +61,7 @@ This project can be run as follows from the command line "thompson.py" ommitting
 * Research on how to use titles as links - [Getting Started With GitHub, Part 3: Creating a Read Me File in Markdown](https://www.youtube.com/watch?v=yXY3f9jw7fg)
 
 ## Problems faced & overcome
-I had problems submitting my code to git. Usually when I committed my code it published numerous files to my GitHub repository that I did not need. I then I had to delete them all again. I researched ways on how to commit my code correctly using git and I found this video helped me a lot. It showed me how to commit the changes that I needed to GitHub with the use of branches and then merging to the master branch.   
+I had problems submitting my code to git. Usually when I committed my code it published numerous files to my GitHub repository that I did not need. I then had to delete them all again. I researched ways on how to commit my code correctly using git and I found this video helped me a lot. It showed me how to commit the changes that I needed to GitHub with the use of branches and then merging to the master branch.   
 
 1.	Git branch myBranchName (Creating a new branch)
 2.	Git branch (Displaying all branches created)
