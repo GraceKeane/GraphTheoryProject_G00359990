@@ -15,6 +15,7 @@ This project can be run as follows from the command line "thompson.py" ommitting
 
 ## Architecture
 
+
 ## What I learned 
 * The syntax for regular expressions
 * How a regex engine works
@@ -41,16 +42,19 @@ This project can be run as follows from the command line "thompson.py" ommitting
 [ * ] - Matches the preceding element zero or more times. For example, ab*c matches "ac", "abc", "abbbc",
 
 ## Research links
-* Additional ways of implementing infix to postfix in python (Title - Infix to postfix in python) - https://www.youtube.com/watch?v=cD6qkvOYL_o&t=15s
-* Describing what a regular expression is essentially (Title - Regular language) - https://en.wikipedia.org/wiki/Regular_language
-* Research of what Thompson's construction consists of (Title - Thompson's construction) -https://en.wikipedia.org/wiki/Thompson%27s_construction
-* Describing what an NFA is essentially (Title - Nondeterministic finite automaton) - https://en.wikipedia.org/wiki/Nondeterministic_finite_automaton
-* How to implementing a regular expression engine (Title - Implementing a Regular Expression Engine) - https://deniskyashif.com/2019/02/17/implementing-a-regular-expression-engine/
-* Infix to postfix algorithm (Title - infix to postfix - algorithm and exercises) - https://www.youtube.com/watch?v=yTpzVWO1Dis
-* Stack, infix and postfix research (Title - Stack | set 2 (infix to postfix)) - https://www.geeksforgeeks.org/stack-set-2-infix-to-postfix/ 
-* Research of what the Kleene star is essentially (Title - Kleene star) - https://en.wikipedia.org/wiki/Kleene_star
-* What a Unary operation is essentially (Title - Unary operation) - https://en.wikipedia.org/wiki/Unary_operation
-* More research on regylar expressions (Regular expressions) - https://en.wikipedia.org/wiki/Regular_expression
+* Additional ways of implementing infix to postfix in python - [Infix to postfix in python](https://www.youtube.com/watch?v=cD6qkvOYL_o&t=15s)
+* Describing what a regular expression is essentially - [Regular language](https://en.wikipedia.org/wiki/Regular_language)
+* Research of what Thompson's construction consists of - [Thompson's construction](https://en.wikipedia.org/wiki/Thompson%27s_construction)
+* Describing what an NFA is essentially - [Nondeterministic finite automaton](https://en.wikipedia.org/wiki/Nondeterministic_finite_automaton)
+* How to implementing a regular expression engine - [Implementing a Regular Expression Engine](https://deniskyashif.com/2019/02/17/implementing-a-regular-expression-engine/)
+* Infix to postfix algorithm - [Infix to postfix - algorithm and exercises](https://www.youtube.com/watch?v=yTpzVWO1Dis)
+* Stack, infix and postfix research - [Stack | set 2 (infix to postfix)](https://www.geeksforgeeks.org/stack-set-2-infix-to-postfix/) 
+* Research of what the Kleene star is essentially - [Kleene star](https://en.wikipedia.org/wiki/Kleene_star)
+* What a Unary operation is essentially - [Unary operation](https://en.wikipedia.org/wiki/Unary_operation)
+* More research on regylar expressions - [Regular expressions](https://en.wikipedia.org/wiki/Regular_expression)
+* VScode readME research - [Using Git with VS Code and Github](https://www.youtube.com/watch?v=9cMWR-EGFuY)
+* More VSCode readME research - [Markdown and Visual Studio Code](https://code.visualstudio.com/docs/languages/markdown)
+* Research on how to use titles as links - [Getting Started With GitHub, Part 3: Creating a Read Me File in Markdown](https://www.youtube.com/watch?v=yXY3f9jw7fg)
 
 ## Problems faced & overcome
 I had problems submitting my code to git. Usually when I committed my code it published numerous files to my GitHub repository that I did not need. I then I had to delete them all again. I researched ways on how to commit my code correctly using git and I found this video helped me a lot. It showed me how to commit the changes that I needed to GitHub with the use of branches and then merging to the master branch.   
@@ -63,13 +67,13 @@ I had problems submitting my code to git. Usually when I committed my code it pu
 6.	Git push --set-upstream origin branch1
 7.	Enter username
 8.	Enter password
-9.	Go to your repository on www.github.com
+9.	Go to your repository on [GitHub](www.github.com)
 10.	Click “Compare & pull request”
 11.	Click “Create pull request”
 12.	Click “Merge pull request”
 13.	Click “Confirm merge”
 
-Research link - https://www.youtube.com/watch?v=JTE2Fn_sCZs
+[Research link](https://www.youtube.com/watch?v=JTE2Fn_sCZs)
 
 
 ## Class videos implemented
@@ -95,4 +99,3 @@ Cleaning & testing => https://github.com/GraceKeane/Cleaning-Testing
 * Google cloud SSH engine
 * Python V 3.7
 * GitHub
-
