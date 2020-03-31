@@ -42,7 +42,7 @@ This project can be run as follows from the command line "thompson.py" ommitting
 [ * ] - Matches the preceding element zero or more times. For example, ab*c matches "ac", "abc", "abbbc",
 
 ## Research links
-* Additional ways of implementing infix to postfix in python (Title - Infix to postfix in python) - https://www.youtube.com/watch?v=cD6qkvOYL_o&t=15s
+* Additional ways of implementing infix to postfix in python [Title - Infix to postfix in python)]- (https://www.youtube.com/watch?v=cD6qkvOYL_o&t=15s)
 * Describing what a regular expression is essentially (Title - Regular language) - https://en.wikipedia.org/wiki/Regular_language
 * Research of what Thompson's construction consists of (Title - Thompson's construction) -https://en.wikipedia.org/wiki/Thompson%27s_construction
 * Describing what an NFA is essentially (Title - Nondeterministic finite automaton) - https://en.wikipedia.org/wiki/Nondeterministic_finite_automaton
@@ -98,6 +98,5 @@ Cleaning & testing => https://github.com/GraceKeane/Cleaning-Testing
 * Google cloud SSH engine
 * Python V 3.7
 * GitHub
-
 
 
