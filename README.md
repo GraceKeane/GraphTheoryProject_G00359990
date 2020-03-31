@@ -15,6 +15,7 @@ This project can be run as follows from the command line "thompson.py" ommitting
 
 ## Architecture
 
+
 ## What I learned 
 * The syntax for regular expressions
 * How a regex engine works
@@ -51,6 +52,8 @@ This project can be run as follows from the command line "thompson.py" ommitting
 * Research of what the Kleene star is essentially (Title - Kleene star) - https://en.wikipedia.org/wiki/Kleene_star
 * What a Unary operation is essentially (Title - Unary operation) - https://en.wikipedia.org/wiki/Unary_operation
 * More research on regylar expressions (Regular expressions) - https://en.wikipedia.org/wiki/Regular_expression
+* VScode readME research - (Title - Using Git with VS Code and Github) - https://www.youtube.com/watch?v=9cMWR-EGFuY
+* More VSCode readME research - (Title - Markdown and Visual Studio Code) - https://code.visualstudio.com/docs/languages/markdown
 
 ## Problems faced & overcome
 I had problems submitting my code to git. Usually when I committed my code it published numerous files to my GitHub repository that I did not need. I then I had to delete them all again. I researched ways on how to commit my code correctly using git and I found this video helped me a lot. It showed me how to commit the changes that I needed to GitHub with the use of branches and then merging to the master branch.   
@@ -95,4 +98,6 @@ Cleaning & testing => https://github.com/GraceKeane/Cleaning-Testing
 * Google cloud SSH engine
 * Python V 3.7
 * GitHub
+
+
 
