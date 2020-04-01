@@ -27,6 +27,7 @@ For this project I am instructed to implement thompson's construction algorithm 
 * Differance between regular expressions
 * How to create a README using Visual studio code
 * How to create and merge braches in GitHub
+* How to use words as links in GitHub README
 
 ## Differant regular expressions research
 [ ? ] - Matches the preceding element zero or one time. For example, ab?c matches only "ac" or "abc".
