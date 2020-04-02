@@ -72,7 +72,7 @@ I had problems submitting my code to git. Usually when I committed my code it pu
 6.	Git push --set-upstream origin branch1
 7.	Enter username
 8.	Enter password
-9.	Go to your repository on [GitHub](www.github.com)
+9.	Go to your repository on [GitHub](https://github.com/)
 10.	Click “Compare & pull request”
 11.	Click “Create pull request”
 12.	Click “Merge pull request”
