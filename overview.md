@@ -8,7 +8,7 @@
 [Referances](#referances)
 <br></br>
 
-## Introduction <br>
+## Introduction
 For this assignment I created a Python programe that can build a non-deterministic finite automaton (NFA) from a regular expression. It then can use the NFA to check if the regular expression matches any hardcoded or prompted string of text. 
 
 <b>Regular Expression (regex)</b><br>
