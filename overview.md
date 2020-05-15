@@ -11,11 +11,11 @@
 ## Introduction
 For this assignment I created a Python program that can build a non-deterministic finite automaton (NFA) from a regular expression. It then can use the NFA to check if the regular expression matches any hardcoded or prompted string of text. 
 
-<b>Regular Expression (regex)</b><br>
+### Regular Expression (regex) <br>
 The concept of regular expressions arose in the 1950s when the American mathematician Stephen Cole Kleene formalized the description of a regular language. A regular expression (shortened as regex or regexp, also referred to as rational expression) is a string containing a series of characters, some of which have a special meaning. They are commonly used in search engines and many programming languages provide regex capabilities either built-in or via libraries. Essentially regular expressions are used is a search pattern used for matching one or more characters within a string for this reason it is perfect for the implementation of this Graph Theory project. Some examples of regular expression operators are ? + | ^ . $ ( ) *
 <br>
 
-<b>Regular Expression operators</b> <br>
+### Regular Expression operators <br>
 *Operators used in this Graph Theory project* <br>
 ( * ) - The Kleene star is represented as * . It matches the preceding element zero or more times. For example the regular expression ab*c matches "ac", "abc", "abbbc" ect but it does not match "abcd".
 
@@ -36,13 +36,14 @@ The concept of regular expressions arose in the 1950s when the American mathemat
 
 ( [^] ) - This specific operator matches a single character that is not contained within the square brackets. For example "[^def]" matches any characters other than "d", "e" or "f".
 
-<b>Non-deterministic finite automaton (NFA)</b><br>
+### Non-deterministic finite automaton (NFA) <br>
 NFAs were introduced in 1959 by Michael O. Rabin and Dana Scott. An NFA is a state machine that consists of numerous states that can accept or reject a finite string. Non-deterministic finite automata can have any number of arrows for each state and symbol.
 
 *Sample NFA*
 <p align="center">
   <img src="https://github.com/GraceKeane/GraphTheoryProject_G00359990/blob/master/Thompson's%20expressions%20%26%20descriptions/NFA.PNG" width="470" height="200">
 </p>
+The output of this NFA is 111101, 00001010, 1110
 
 ## Run
 
