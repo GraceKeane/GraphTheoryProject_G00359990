@@ -17,6 +17,7 @@ For this project I am instructed to implement thompson's construction algorithm 
 * "project.py" - I added an additional class called "project.py" that shows a differant way to parse a regular expression from infix to postfix. I followed a youtube video to do this. [Link](https://www.youtube.com/watch?v=cD6qkvOYL_o&t=15s)
 * "finaltesting.py" - This class contains more tests relating to regular expressions and strings it imports "thompson.py" to do so. It carries out numerous tests using the assert keyword to test every operator e.g. | . * + ?
 * "VSCREADME.txt" - I created a README using visual studio code
+* "Help.py" - Allows users to learn how to use the program. Includes names of each class, class command and a brief description of classes in this programe.
 
 ## What I learned 
 * The syntax for regular expressions
