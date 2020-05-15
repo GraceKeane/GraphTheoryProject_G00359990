@@ -37,6 +37,7 @@ The concept of regular expressions arose in the 1950s when the American mathemat
 ( [^] ) - This specific operator matches a single character that is not contained within the square brackets. For example "[^def]" matches any characters other than "d", "e" or "f".
 
 <b>Non-deterministic finite automaton (NFA)</b>
+NFAs were introduced in 1959 by Michael O. Rabin and Dana Scott. An NFA is a state machine that consists of numerous states that can accept or reject a finite string. Non-deterministic finite automata can have any number of arrows for each state and symbol.
 
 ## Run
 
@@ -46,4 +47,5 @@ The concept of regular expressions arose in the 1950s when the American mathemat
 
 ## Referances
 [Regular Expression - Wikipedia](https://en.wikipedia.org/wiki/Regular_expression) <br>
-[Regular Expressions](https://www.tldp.org/LDP/Bash-Beginners-Guide/html/sect_04_01.html)
+[Regular Expressions](https://www.tldp.org/LDP/Bash-Beginners-Guide/html/sect_04_01.html) <br>
+[Nondeterministic finite automaton](https://en.wikipedia.org/wiki/Nondeterministic_finite_automaton)
