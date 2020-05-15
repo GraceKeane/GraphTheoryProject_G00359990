@@ -15,13 +15,17 @@ For this assignment I created a Python program that can build a non-deterministi
 The concept of regular expressions arose in the 1950s when the American mathematician Stephen Cole Kleene formalized the description of a regular language. A regular expression (shortened as regex or regexp, also referred to as rational expression) is a string containing a series of characters, some of which have a special meaning. They are commonly used in search engines and many programming languages provide regex capabilities either built-in or via libraries. Essentially regular expressions are used is a search pattern used for matching one or more characters within a string for this reason it is perfect for the implementation of this Graph Theory project. Some examples of rugular expression operators are ? + | ^ . $ ( ) *
 <br>
 
-<b>Regular Expression operators</b><br>
+<b>Regular Expression operators</b> <br>
+*Operators used in this Graph Theory project* <br>
 ( * ) - The Kleene star is represented as * . It matches the proceding element zero or more times. For example the regular expression ab*c matches "ac", "abc", "abbbc" ect but it does not match "abcd".
 
 ( + ) - The plus operator matches proceding elements one or more times. For example "ab+c" matches "abc", "abbc", "abbbc" and so on, but it does not match "ac".
 
 ( | ) - | is knows as the choice operator. It matches eiither the expression before or after the operator. For example "abc|def" matches either "abc" or "def"
 
+( ? ) - This operator matches the preceding element zero or once. For example, "ab?c" matches only "ac" or "abc"
+
+( . ) - The dot operator matches any single character. it matches a literal dot. For example, a.c matches "abc", etc, but "a.c" matches only "a", ".", or "c".
 
 
 
