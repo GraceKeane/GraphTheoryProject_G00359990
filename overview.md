@@ -58,26 +58,24 @@ Thompson construction was created by the famous computer scientist Ken Thompson.
 ### Rules for Thompson's construction
 
 <p align="center">
-  <img src="https://github.com/GraceKeane/GraphTheoryProject_G00359990/blob/master/Thompson's%20expressions%20%26%20descriptions/Empty%20string.PNG" width="470" height="200">
+  <img src="https://github.com/GraceKeane/GraphTheoryProject_G00359990/blob/master/Thompson's%20expressions%20%26%20descriptions/Empty%20string.PNG" width="470" height="300">
 </p>
 
 <p align="center">
-  <img src="https://github.com/GraceKeane/GraphTheoryProject_G00359990/blob/master/Thompson's%20expressions%20%26%20descriptions/Plus%20operator.PNG" width="470" height="200">
+  <img src="https://github.com/GraceKeane/GraphTheoryProject_G00359990/blob/master/Thompson's%20expressions%20%26%20descriptions/Plus%20operator.PNG" width="470" height="300">
 </p>
 
 <p align="center">
-  <img src="https://github.com/GraceKeane/GraphTheoryProject_G00359990/blob/master/Thompson's%20expressions%20%26%20descriptions/Or%20operator.PNG" width="470" height="200">
+  <img src="https://github.com/GraceKeane/GraphTheoryProject_G00359990/blob/master/Thompson's%20expressions%20%26%20descriptions/Or%20operator.PNG" width="470" height="300">
 </p>
 
 <p align="center">
-  <img src="https://github.com/GraceKeane/GraphTheoryProject_G00359990/blob/master/Thompson's%20expressions%20%26%20descriptions/Concatenate.PNG" width="470" height="200">
+  <img src="https://github.com/GraceKeane/GraphTheoryProject_G00359990/blob/master/Thompson's%20expressions%20%26%20descriptions/Concatenate.PNG" width="470" height="300">
 </p>
 
 <p align="center">
   <img src="https://github.com/GraceKeane/GraphTheoryProject_G00359990/blob/master/Thompson's%20expressions%20%26%20descriptions/Kleene%20star.PNG" width="470" height="200">
 </p>
-
-
 
 ## Referances
 [Regular Expression - Wikipedia](https://en.wikipedia.org/wiki/Regular_expression) <br>
@@ -85,3 +83,4 @@ Thompson construction was created by the famous computer scientist Ken Thompson.
 [Nondeterministic finite automaton](https://en.wikipedia.org/wiki/Nondeterministic_finite_automaton) <br>
 [How to create a table of contents on git research](https://github.com/GraceKeane/github-markdown-toc) <br>
 [Research on how to create a markdown image](https://github.com/GraceKeane/markdown-here)
+[Thompson's construction](https://en.wikipedia.org/wiki/Thompson%27s_construction)
