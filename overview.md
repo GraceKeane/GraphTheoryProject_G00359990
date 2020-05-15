@@ -27,7 +27,14 @@ The concept of regular expressions arose in the 1950s when the American mathemat
 
 ( . ) - The dot operator matches any single character. it matches a literal dot. For example, a.c matches "abc", etc, but "a.c" matches only "a", ".", or "c".
 
+*Other regular expression operators* <br>
+() - The opening and closed bracket defines a marked subexpression
 
+( ^ ) - This regex operator matches the starting position of any line.
+
+( [] ) - The opened and closed square brachtes matches a single character that is located within the brackets e.g. "[abc]" matches characters "a", "b" or "c". Regex "[a-z]" matches any lowercase charcter from a to z.
+
+( [^] ) - This specific operator matches a single charcter that is not contained within the square brachect. For example "[^def]" matches any characters other than "d", "e" or "f".
 
 <b>Non-deterministic finite automaton (NFA)</b>
 
