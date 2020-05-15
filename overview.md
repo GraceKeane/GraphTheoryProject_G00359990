@@ -9,14 +9,21 @@
 <br></br>
 
 ## Introduction
-For this assignment I created a Python programe that can build a non-deterministic finite automaton (NFA) from a regular expression. It then can use the NFA to check if the regular expression matches any hardcoded or prompted string of text. 
+For this assignment I created a Python program that can build a non-deterministic finite automaton (NFA) from a regular expression. It then can use the NFA to check if the regular expression matches any hardcoded or prompted string of text. 
 
 <b>Regular Expression (regex)</b><br>
-The concept of regular expressions arose in the 1950s when the American mathematician Stephen Cole Kleene formalized the description of a regular language. A regular expression (shortened as regex or regexp, also referred to as rational expression) is a string containing a series of characters, some of which have a special meaning. They are commonly used in search engines and many programming languages provide regex capabilities either built-in or via libraries. Essentially regular expressions are used is a search pattern used for matching one or more characters within a string that is why regex is perfect for the implementation of this Graph Theory project.
-
+The concept of regular expressions arose in the 1950s when the American mathematician Stephen Cole Kleene formalized the description of a regular language. A regular expression (shortened as regex or regexp, also referred to as rational expression) is a string containing a series of characters, some of which have a special meaning. They are commonly used in search engines and many programming languages provide regex capabilities either built-in or via libraries. Essentially regular expressions are used is a search pattern used for matching one or more characters within a string for this reason it is perfect for the implementation of this Graph Theory project. Some examples of rugular expression operators are ? + | ^ . $ ( ) *
 <br>
-<Regular Expression examples>
-Kleene star
+
+<b>Regular Expression operators</b><br>
+( * ) - The Kleene star is represented as * . It matches the proceding element zero or more times. For example the regular expression ab*c matches "ac", "abc", "abbbc" ect but it does not match "abcd".
+
+( + ) - The plus operator matches proceding elements one or more times. For example "ab+c" matches "abc", "abbc", "abbbc" and so on, but it does not match "ac".
+
+( | ) - | is knows as the choice operator. It matches eiither the expression before or after the operator. For example "abc|def" matches either "abc" or "def"
+
+
+
 
 <b>Non-deterministic finite automaton (NFA)</b>
 
@@ -27,4 +34,5 @@ Kleene star
 ## Algorithm
 
 ## Referances
-[Regular Expression - Wikipedia](https://en.wikipedia.org/wiki/Regular_expression)
+[Regular Expression - Wikipedia](https://en.wikipedia.org/wiki/Regular_expression) <br>
+[Regular Expressions](https://www.tldp.org/LDP/Bash-Beginners-Guide/html/sect_04_01.html)
