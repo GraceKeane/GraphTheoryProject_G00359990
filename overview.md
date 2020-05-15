@@ -39,6 +39,11 @@ The concept of regular expressions arose in the 1950s when the American mathemat
 <b>Non-deterministic finite automaton (NFA)</b><br>
 NFAs were introduced in 1959 by Michael O. Rabin and Dana Scott. An NFA is a state machine that consists of numerous states that can accept or reject a finite string. Non-deterministic finite automata can have any number of arrows for each state and symbol.
 
+*Sample NFA*
+<p align="center">
+  <img src="https://github.com/GraceKeane/GraphTheoryProject_G00359990/blob/master/Thompson's%20expressions%20%26%20descriptions/NFA.PNG" width="470" height="200">
+</p>
+
 ## Run
 
 ## Test
@@ -48,4 +53,6 @@ NFAs were introduced in 1959 by Michael O. Rabin and Dana Scott. An NFA is a sta
 ## Referances
 [Regular Expression - Wikipedia](https://en.wikipedia.org/wiki/Regular_expression) <br>
 [Regular Expressions](https://www.tldp.org/LDP/Bash-Beginners-Guide/html/sect_04_01.html) <br>
-[Nondeterministic finite automaton](https://en.wikipedia.org/wiki/Nondeterministic_finite_automaton)
+[Nondeterministic finite automaton](https://en.wikipedia.org/wiki/Nondeterministic_finite_automaton) <br>
+[How to create a table of contents on git research](https://github.com/GraceKeane/github-markdown-toc) <br>
+[Research on how to create a markdown image](https://github.com/GraceKeane/markdown-here)
