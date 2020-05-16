@@ -62,8 +62,9 @@ The concept of regular expressions arose in the 1950s when the American mathemat
 NFAs were introduced in 1959 by Michael O. Rabin and Dana Scott. An NFA is a state machine that consists of numerous states that can accept or reject a finite string. Non-deterministic finite automata can have any number of arrows for each state and symbol.<br>
 I have created diagrams converting imortant regex operator to their NFA forms [here](https://github.com/GraceKeane/GraphTheoryProject_G00359990/tree/master/Thompson's%20expressions%20%26%20descriptions)
 
-*Sample beginner regex to NFA calculations*
-<b> Converting X|YZ to NFA format </b>
+*Sample beginner regex to NFA calculations* <br>
+<b> Converting X|YZ to NFA format </b> <br>
+For this equation i broke the regex up into smaller parts. Diagram 1 demonstrates the Or operators functionality between "X" and "YZ". The Or operator in this case has two transitions between them. Diagram 2 demonstrates breaking down the "YZ" into its constituent components. YZ has an intermediate state. The circle on the left is called the begining state and the right circle is called the accept state. <br>
 
 <p align="center">
   <img src="https://github.com/GraceKeane/GraphTheoryProject_G00359990/blob/master/Thompson's%20expressions%20%26%20descriptions/cal1.PNG" width="250" height="250">
