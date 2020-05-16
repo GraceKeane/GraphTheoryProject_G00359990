@@ -23,7 +23,7 @@ For this assignment I created a Python program that can build a non-deterministi
 3) Use the smaller NFA’s to create the overall NFA.
 4) Implement the matching algorithm using the NFA
 
-## Important program files
+### Important program files
 1) "thompson.py" - The class thompson.py contains all the rules for this project to work. It stores important functions which are used to determine does a certain regular expression match a given string.
 2) "testing.py" - This class used as a module so it can import thompson.py. It matches infix regular expressions to strings, the data in this class has been hardcoded.
 3) "prompt.py" - I have developed a class that allows for user input. When a regular expression and a string is entered, the program then (by the help of the import keyword) follows the rules applied in "thompson.py" and detremines does the regular expression match the string specified.
