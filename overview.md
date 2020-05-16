@@ -59,9 +59,12 @@ The concept of regular expressions arose in the 1950s when the American mathemat
 ( [^] ) - This specific operator matches a single character that is not contained within the square brackets. For example "[^def]" matches any characters other than "d", "e" or "f".
 
 ### Non-deterministic finite automaton<br>
-NFAs were introduced in 1959 by Michael O. Rabin and Dana Scott. An NFA is a state machine that consists of numerous states that can accept or reject a finite string. Non-deterministic finite automata can have any number of arrows for each state and symbol.
+NFAs were introduced in 1959 by Michael O. Rabin and Dana Scott. An NFA is a state machine that consists of numerous states that can accept or reject a finite string. Non-deterministic finite automata can have any number of arrows for each state and symbol.<br>
+I have created diagrams converting imortant regex operator to their NFA forms [here](https://github.com/GraceKeane/GraphTheoryProject_G00359990/tree/master/Thompson's%20expressions%20%26%20descriptions)
 
 *Sample beginner regex to NFA calculations*
+<b> Converting X|YZ to NFA format </b>
+
 <p align="center">
   <img src="https://github.com/GraceKeane/GraphTheoryProject_G00359990/blob/master/Thompson's%20expressions%20%26%20descriptions/NFA.PNG" width="470" height="200">
 </p>
@@ -79,9 +82,7 @@ Thompson construction was created by the famous computer scientist Ken Thompson.
 ### Rules for Thompson's construction
 *Regular expression to NFA simple calculation*
 
-<p align="center">
-  <img src="https://github.com/GraceKeane/GraphTheoryProject_G00359990/blob/master/Thompson's%20expressions%20%26%20descriptions/Empty%20string.PNG" width="470" height="300">
-</p>
+
 
 ## Referances
 * Showed me the various regular expressions and functions - [Regular Expressions](https://www.tldp.org/LDP/Bash-Beginners-Guide/html/sect_04_01.html) 
