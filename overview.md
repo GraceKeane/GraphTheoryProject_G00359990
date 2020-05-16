@@ -7,7 +7,7 @@
   * [Regular Expression](#regular-expression)
   * [Regular Expression operators](#regular-expression-operators)
   * [Non-deterministic finite automaton](#non-deterministic-finite-automaton)
-  * [Beginner calculations](#beginner-calculations)
+  * [Beginner calculations](#Beginner-calculations)
 * [Run for Thompsons Construction](#run)<br>
 * [Test](#test)<br>
 * [Algorithm](#algorithm)<br>
@@ -33,6 +33,14 @@ For this assignment I created a Python program that can build a non-deterministi
 6) "Help.py" - Allows users to learn how to use the program. Includes names of each class, class command and a brief description of classes in this programe.
 7) "VSCREADME.txt" - I created a README using visual studio code.
 8) "Thompson's expressions & descriptions" - Contains useful diagrams and edscriptions of regular expression operators.
+
+### Infix & Postfix notations
+Infix: For example the expression of the form a operand b. When an operator is in-between every pair of operands. 
+Postfix:For example the expression of the form a b operand. When an operator is followed by every pair of operands.
+
+These operators formes mathematical expressions using parentheses. I have described the various precidence levels and rules in readMe.md.
+
+An example of infix notation would be A * B + C / D. If I converted that equation to postfix it would follow the rules of precidence and the output would be + * A B/ C D.
 
 ### Regular Expression<br>
 The concept of regular expressions arose in the 1950s when the American mathematician Stephen Cole Kleene formalized the description of a regular language. A regular expression (regex) is a string containing a series of characters, these special characters have a special meaning. They are mainly used in search engines and many programming languages provide regex capabilities either built-in or via libraries. Essentially regular expressions are used as a search pattern for matching one or more characters within a string, therefore for this reason they are perfect for the implementation of this Graph Theory project. Some examples of regular expression operators are ? + | ^ . $ ( ) *
