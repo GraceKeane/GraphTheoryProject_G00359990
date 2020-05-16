@@ -2,6 +2,8 @@
 
 ## Contents
 * [Introduction](#introduction)<br>
+  * [Program implementation stepts](#program-implementation-stepts)
+  * [Important program files](#important-program-files)
   * [Regular Expression](#regular-expression)
   * [Regular Expression operators](#regular-expression-operators)
   * [Non-deterministic finite automaton](#non-deterministic-finite-automaton)
@@ -12,10 +14,27 @@
 <br></br>
 
 ## Introduction
-For this assignment I created a Python program that can build a non-deterministic finite automaton (NFA) from a regular expression. It then can use the NFA to check if the regular expression matches any hardcoded or prompted string of text. The program is based off an algorithm known as Thompson’s construction, named after the well-known computer scientist Ken Thompson
+For this assignment I created a Python program that can build a non-deterministic finite automaton (NFA) from a regular expression. It then can use the NFA to check if the regular expression matches any hardcoded or prompted string of text. The program is based off an algorithm known as Thompson’s construction, named after the well-known computer scientist Ken Thompson.
+
+### Program implementation stepts
+*Easier to implement this program in steps rather than altogether*
+1) Parse the regular expression from infix to postfix notation.
+2) Build a series of small NFA’s for parts of the regular expression.
+3) Use the smaller NFA’s to create the overall NFA.
+4) Implement the matching algorithm using the NFA
+
+## Important program files
+1) "thompson.py" - The class thompson.py contains all the rules for this project to work. It stores important functions which are used to determine does a certain regular expression match a given string.
+2) "testing.py" - This class used as a module so it can import thompson.py. It matches infix regular expressions to strings, the data in this class has been hardcoded.
+3) "prompt.py" - I have developed a class that allows for user input. When a regular expression and a string is entered, the program then (by the help of the import keyword) follows the rules applied in "thompson.py" and detremines does the regular expression match the string specified.
+4) "project.py" - I added an additional class called "project.py" that shows a differant way to parse a regular expression from infix to postfix. I followed a youtube video to do this. [Link](https://www.youtube.com/watch?v=cD6qkvOYL_o&t=15s)
+5) "finaltesting.py" - This class contains more tests relating to regular expressions and strings it imports "thompson.py" to do so. It carries out numerous tests using the assert keyword to test every operator e.g. | . * + ?
+6) "Help.py" - Allows users to learn how to use the program. Includes names of each class, class command and a brief description of classes in this programe.
+7) "VSCREADME.txt" - I created a README using visual studio code.
+8) "Thompson's expressions & descriptions" - Contains useful diagrams and edscriptions of regular expression operators.
 
 ### Regular Expression<br>
-The concept of regular expressions arose in the 1950s when the American mathematician Stephen Cole Kleene formalized the description of a regular language. A regular expression (shortened as regex or regexp, also referred to as rational expression) is a string containing a series of characters, some of which have a special meaning. They are commonly used in search engines and many programming languages provide regex capabilities either built-in or via libraries. Essentially regular expressions are used is a search pattern used for matching one or more characters within a string for this reason it is perfect for the implementation of this Graph Theory project. Some examples of regular expression operators are ? + | ^ . $ ( ) *
+The concept of regular expressions arose in the 1950s when the American mathematician Stephen Cole Kleene formalized the description of a regular language. A regular expression (regex) is a string containing a series of characters, these special characters have a special meaning. They are mainly used in search engines and many programming languages provide regex capabilities either built-in or via libraries. Essentially regular expressions are used as a search pattern for matching one or more characters within a string, therefore for this reason they are perfect for the implementation of this Graph Theory project. Some examples of regular expression operators are ? + | ^ . $ ( ) *
 <br>
 
 ### Regular Expression operators<br>
@@ -42,12 +61,11 @@ The concept of regular expressions arose in the 1950s when the American mathemat
 ### Non-deterministic finite automaton<br>
 NFAs were introduced in 1959 by Michael O. Rabin and Dana Scott. An NFA is a state machine that consists of numerous states that can accept or reject a finite string. Non-deterministic finite automata can have any number of arrows for each state and symbol.
 
-*Sample NFA*
+*Sample beginner regex to NFA calculations*
 <p align="center">
   <img src="https://github.com/GraceKeane/GraphTheoryProject_G00359990/blob/master/Thompson's%20expressions%20%26%20descriptions/NFA.PNG" width="470" height="200">
 </p>
-The output of this NFA is 111101, 00001010, 1110
-Explain how i got this result in basic stepts
+
 
 ## Run
 How to run the program
