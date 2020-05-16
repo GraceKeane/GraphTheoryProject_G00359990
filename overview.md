@@ -78,7 +78,7 @@ Thompson construction was created by the famous computer scientist Ken Thompson.
 * Stack, infix and postfix research - [Stack | set 2 (infix to postfix)](https://www.geeksforgeeks.org/stack-set-2-infix-to-postfix/) 
 * Research of what the Kleene star is essentially - [Kleene star](https://en.wikipedia.org/wiki/Kleene_star)
 * What a Unary operation is essentially - [Unary operation](https://en.wikipedia.org/wiki/Unary_operation)
-* More research on regylar expressions - [Regular expressions](https://en.wikipedia.org/wiki/Regular_expression)
+* More research on regular expressions - [Regular expressions](https://en.wikipedia.org/wiki/Regular_expression)
 * VScode readME research - [Using Git with VS Code and Github](https://www.youtube.com/watch?v=9cMWR-EGFuY)
 * More VSCode readME research - [Markdown and Visual Studio Code](https://code.visualstudio.com/docs/languages/markdown)
 * Research on how to use titles as links - [Getting Started With GitHub, Part 3: Creating a Read Me File in Markdown](https://www.youtube.com/watch?v=yXY3f9jw7fg)
