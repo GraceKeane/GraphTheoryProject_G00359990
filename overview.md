@@ -69,12 +69,12 @@ For this equation i broke the regex up into smaller parts. Diagram 1 demonstrate
 <p align="center">
   <img src="https://github.com/GraceKeane/GraphTheoryProject_G00359990/blob/master/Thompson's%20expressions%20%26%20descriptions/cal1.PNG" width="250" height="250">
 </p>
-*Diagram 1*
+<b>Diagram 1</b>
 
 <p align="center">
   <img src="https://github.com/GraceKeane/GraphTheoryProject_G00359990/blob/master/Thompson's%20expressions%20%26%20descriptions/cal2.PNG" width="250" height="250">
 </p>
-*Diagram 2*
+<b>Diagram 2</b> 
 
 ## Run
 How to run the program
