@@ -4,6 +4,7 @@
 * [Introduction](#introduction)<br>
   * [Program implementation stepts](#program-implementation-stepts)
   * [Important program files](#important-program-files)
+  * [Infix & Postfix notations](#infix-&-postfix-notations)
   * [Regular Expression](#regular-expression)
   * [Regular Expression operators](#regular-expression-operators)
   * [Non-deterministic finite automaton](#non-deterministic-finite-automaton)
