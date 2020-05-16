@@ -66,7 +66,11 @@ I have created diagrams converting imortant regex operator to their NFA forms [h
 <b> Converting X|YZ to NFA format </b>
 
 <p align="center">
-  <img src="https://github.com/GraceKeane/GraphTheoryProject_G00359990/blob/master/Thompson's%20expressions%20%26%20descriptions/Calculation.PNG" width="600" height="500">
+  <img src="https://github.com/GraceKeane/GraphTheoryProject_G00359990/blob/master/Thompson's%20expressions%20%26%20descriptions/cal1.PNG" width="250" height="250">
+</p>
+
+<p align="center">
+  <img src="https://github.com/GraceKeane/GraphTheoryProject_G00359990/blob/master/Thompson's%20expressions%20%26%20descriptions/cal2.PNG" width="250" height="250">
 </p>
 
 
