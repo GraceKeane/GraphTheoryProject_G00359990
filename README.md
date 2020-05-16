@@ -8,6 +8,8 @@ Python has well-defined rules for specifying the order in which the operators in
 
 The Thompsons construction algorithm works by splitting an expression into its constituent subexpressions. This algorithm is created by a computer scientist called Kem Thompson.
 
+*More information is available on my [overview.md](https://github.com/GraceKeane/GraphTheoryProject_G00359990/blob/master/overview.md) file*
+
 For this project I am instructed to implement thompson's construction algorithm to determine does a given regular expression match the string assigned.
 
 ## Architecture
