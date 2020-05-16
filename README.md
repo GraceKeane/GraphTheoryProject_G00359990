@@ -49,6 +49,21 @@ I had problems submitting my code to git. Usually when I committed my code it pu
 
 [Research link](https://www.youtube.com/watch?v=JTE2Fn_sCZs)
 
+## Referances
+* Describing what an NFA is essentially - [Nondeterministic finite automaton](https://en.wikipedia.org/wiki/Nondeterministic_finite_automaton)
+* How to implementing a regular expression engine - [Implementing a Regular Expression Engine](https://deniskyashif.com/2019/02/17/implementing-a-regular-expression-engine/)
+* Infix to postfix algorithm - [Infix to postfix - algorithm and exercises](https://www.youtube.com/watch?v=yTpzVWO1Dis)
+* Stack, infix and postfix research - [Stack | set 2 (infix to postfix)](https://www.geeksforgeeks.org/stack-set-2-infix-to-postfix/) 
+* Research of what the Kleene star is essentially - [Kleene star](https://en.wikipedia.org/wiki/Kleene_star)
+* What a Unary operation is essentially - [Unary operation](https://en.wikipedia.org/wiki/Unary_operation)
+* More research on regular expressions - [Regular expressions](https://en.wikipedia.org/wiki/Regular_expression)
+* VScode readME research - [Using Git with VS Code and Github](https://www.youtube.com/watch?v=9cMWR-EGFuY)
+* More VSCode readME research - [Markdown and Visual Studio Code](https://code.visualstudio.com/docs/languages/markdown)
+* Research on how to use titles as links - [Getting Started With GitHub, Part 3: Creating a Read Me File in Markdown](https://www.youtube.com/watch?v=yXY3f9jw7fg)
+* Additional ways of implementing infix to postfix in python - [Infix to postfix in python](https://www.youtube.com/watch?v=cD6qkvOYL_o&t=15s)
+* Describing what a regular expression is essentially - [Regular language](https://en.wikipedia.org/wiki/Regular_language)
+* Research of what Thompson's construction consists of - [Thompson's construction](https://en.wikipedia.org/wiki/Thompson%27s_construction)
+* Showed me the various regular expressions and functions - [Regular Expressions](https://www.tldp.org/LDP/Bash-Beginners-Guide/html/sect_04_01.html) 
 
 ## Class videos implemented
 ### I implemented the code from the videos separately so that I can see how the application can be broken up into smaller parts
