@@ -56,25 +56,10 @@ How did i test the program
 Thompson construction was created by the famous computer scientist Ken Thompson. Thompson construction is a method of transforming a regular expression into an equivalent nondeterministic finite automaton. This NFA can be used to match strings against the regular expression. The algorithm works by splitting an expression into its corresponding subexpressions. 
 
 ### Rules for Thompson's construction
+*Regular expression to NFA simple calculation*
 
 <p align="center">
   <img src="https://github.com/GraceKeane/GraphTheoryProject_G00359990/blob/master/Thompson's%20expressions%20%26%20descriptions/Empty%20string.PNG" width="470" height="300">
-</p>
-
-<p align="center">
-  <img src="https://github.com/GraceKeane/GraphTheoryProject_G00359990/blob/master/Thompson's%20expressions%20%26%20descriptions/Plus%20operator.PNG" width="470" height="300">
-</p>
-
-<p align="center">
-  <img src="https://github.com/GraceKeane/GraphTheoryProject_G00359990/blob/master/Thompson's%20expressions%20%26%20descriptions/Or%20operator.PNG" width="470" height="300">
-</p>
-
-<p align="center">
-  <img src="https://github.com/GraceKeane/GraphTheoryProject_G00359990/blob/master/Thompson's%20expressions%20%26%20descriptions/Concatenate.PNG" width="470" height="300">
-</p>
-
-<p align="center">
-  <img src="https://github.com/GraceKeane/GraphTheoryProject_G00359990/blob/master/Thompson's%20expressions%20%26%20descriptions/Kleene%20star.PNG" width="470" height="200">
 </p>
 
 ## Referances
