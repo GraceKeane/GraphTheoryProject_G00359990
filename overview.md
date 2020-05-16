@@ -1,21 +1,24 @@
 # ![Markdown Here logo](https://github.com/GraceKeane/GraphTheoryProject_G00359990/blob/master/Logo.png) 
 
 ## Contents
-[Introduction](#introduction)<br>
-[Run](#run)<br>
-[Test](#test)<br>
-[Algorithm](#algorithm)<br>
-[Referances](#referances)
+* [Introduction](#introduction)<br>
+  * [Regular Expression](#regular-expression)
+  * [Regular Expression operators](#regular-expression-operators)
+  * [Non-deterministic finite automaton](#non-deterministic-finite-automaton)
+* [Run for Thompsons Construction](#run)<br>
+* [Test](#test)<br>
+* [Algorithm](#algorithm)<br>
+* [Referances](#referances)
 <br></br>
 
 ## Introduction
 For this assignment I created a Python program that can build a non-deterministic finite automaton (NFA) from a regular expression. It then can use the NFA to check if the regular expression matches any hardcoded or prompted string of text. The program is based off an algorithm known as Thompson’s construction, named after the well-known computer scientist Ken Thompson
 
-### Regular Expression (regex) <br>
+### Regular Expression<br>
 The concept of regular expressions arose in the 1950s when the American mathematician Stephen Cole Kleene formalized the description of a regular language. A regular expression (shortened as regex or regexp, also referred to as rational expression) is a string containing a series of characters, some of which have a special meaning. They are commonly used in search engines and many programming languages provide regex capabilities either built-in or via libraries. Essentially regular expressions are used is a search pattern used for matching one or more characters within a string for this reason it is perfect for the implementation of this Graph Theory project. Some examples of regular expression operators are ? + | ^ . $ ( ) *
 <br>
 
-### Regular Expression operators <br>
+### Regular Expression operators<br>
 *Operators used in this Graph Theory project* <br>
 ( * ) - The Kleene star is represented as * . It matches the preceding element zero or more times. For example the regular expression ab*c matches "ac", "abc", "abbbc" ect but it does not match "abcd".
 
@@ -36,7 +39,7 @@ The concept of regular expressions arose in the 1950s when the American mathemat
 
 ( [^] ) - This specific operator matches a single character that is not contained within the square brackets. For example "[^def]" matches any characters other than "d", "e" or "f".
 
-### Non-deterministic finite automaton (NFA) <br>
+### Non-deterministic finite automaton<br>
 NFAs were introduced in 1959 by Michael O. Rabin and Dana Scott. An NFA is a state machine that consists of numerous states that can accept or reject a finite string. Non-deterministic finite automata can have any number of arrows for each state and symbol.
 
 *Sample NFA*
@@ -63,9 +66,19 @@ Thompson construction was created by the famous computer scientist Ken Thompson.
 </p>
 
 ## Referances
-[Regular Expression - Wikipedia](https://en.wikipedia.org/wiki/Regular_expression) <br>
-[Regular Expressions](https://www.tldp.org/LDP/Bash-Beginners-Guide/html/sect_04_01.html) <br>
-[Nondeterministic finite automaton](https://en.wikipedia.org/wiki/Nondeterministic_finite_automaton) <br>
-[How to create a table of contents on git research](https://github.com/GraceKeane/github-markdown-toc) <br>
-[Research on how to create a markdown image](https://github.com/GraceKeane/markdown-here)
-[Thompson's construction](https://en.wikipedia.org/wiki/Thompson%27s_construction)
+* Showed me the various regular expressions and functions - [Regular Expressions](https://www.tldp.org/LDP/Bash-Beginners-Guide/html/sect_04_01.html) 
+* How to create a table of contents on git research - [Table of contents on git](https://github.com/GraceKeane/github-markdown-toc)
+* Research on how to create a markdown image -[Markdown image](https://github.com/GraceKeane/markdown-here)
+* Additional ways of implementing infix to postfix in python - [Infix to postfix in python](https://www.youtube.com/watch?v=cD6qkvOYL_o&t=15s)
+* Describing what a regular expression is essentially - [Regular language](https://en.wikipedia.org/wiki/Regular_language)
+* Research of what Thompson's construction consists of - [Thompson's construction](https://en.wikipedia.org/wiki/Thompson%27s_construction)
+* Describing what an NFA is essentially - [Nondeterministic finite automaton](https://en.wikipedia.org/wiki/Nondeterministic_finite_automaton)
+* How to implementing a regular expression engine - [Implementing a Regular Expression Engine](https://deniskyashif.com/2019/02/17/implementing-a-regular-expression-engine/)
+* Infix to postfix algorithm - [Infix to postfix - algorithm and exercises](https://www.youtube.com/watch?v=yTpzVWO1Dis)
+* Stack, infix and postfix research - [Stack | set 2 (infix to postfix)](https://www.geeksforgeeks.org/stack-set-2-infix-to-postfix/) 
+* Research of what the Kleene star is essentially - [Kleene star](https://en.wikipedia.org/wiki/Kleene_star)
+* What a Unary operation is essentially - [Unary operation](https://en.wikipedia.org/wiki/Unary_operation)
+* More research on regylar expressions - [Regular expressions](https://en.wikipedia.org/wiki/Regular_expression)
+* VScode readME research - [Using Git with VS Code and Github](https://www.youtube.com/watch?v=9cMWR-EGFuY)
+* More VSCode readME research - [Markdown and Visual Studio Code](https://code.visualstudio.com/docs/languages/markdown)
+* Research on how to use titles as links - [Getting Started With GitHub, Part 3: Creating a Read Me File in Markdown](https://www.youtube.com/watch?v=yXY3f9jw7fg)
