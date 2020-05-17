@@ -4,7 +4,7 @@
 * [Introduction](#introduction)<br>
   * [Program implementation stepts](#program-implementation-stepts)
   * [Important program files](#important-program-files)
- * [Algorithm](#algorithm)<br>
+* [Algorithm](#algorithm)<br>
   * [Infix and Postfix notations](#infix-and-postfix-notations)
   * [Regular Expression](#regular-expression)
   * [Regular Expression operators](#regular-expression-operators)
