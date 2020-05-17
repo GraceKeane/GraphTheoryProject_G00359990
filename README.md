@@ -7,9 +7,9 @@ Thompsons construction is a method of transforming a regular expression into an 
 A regular expression (also called regex) is a string containing a series of characters that have special meaning. For example, the three characters |, .  and * have the special meanings of concatenate, or, and Kleene star.The regular expression 0.1 means a 0 followed by a 1, 0|1 means a 0 or a 1, and 1* means any number of 1’s. More regular expression examples are defined in [overview.md](https://github.com/GraceKeane/GraphTheoryProject_G00359990/blob/master/overview.md) file. For this project I implemented the * | . ? + operators.
 
 Non-deterministic finite automatons (NFA) were introduced in 1959 by Michael O. Rabin and Dana Scott. An NFA is a state machine that consists of numerous states that can accept or reject a finite string. An NFA can have any number of arrows for each state and symbol.<br>
-I have created diagrams converting important regex operator to their NFA forms [here](https://github.com/GraceKeane/GraphTheoryProject_G00359990/tree/master/Thompson's%20expressions%20%26%20descriptions)
+I have created diagrams converting important regular expressions (regex) operator to their Non-deterministic finite automaton (NFA) forms [here](https://github.com/GraceKeane/GraphTheoryProject_G00359990/tree/master/Thompson's%20expressions%20%26%20descriptions)
 
-I have done a basic calculation to demonstrate converting a regular expression (regex) to a Non-deterministic finite automaton (NFA) in my [overview.md](https://github.com/GraceKeane/GraphTheoryProject_G00359990/blob/master/overview.md) file.
+I also have done a basic calculation to demonstrate converting a regular expression (regex) to a Non-deterministic finite automaton (NFA) in my [overview.md](https://github.com/GraceKeane/GraphTheoryProject_G00359990/blob/master/overview.md) file.
 
 Python has well-defined rules for specifying the order in which the operators in an expression are evaluated when the expression has several operators. For example, multiplication and division have a higher precedence than addition and subtraction. Precedence rules can be overridden by explicit parentheses.
 
