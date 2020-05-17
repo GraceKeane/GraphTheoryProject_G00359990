@@ -24,16 +24,16 @@ For this assignment I created a Python program that can build a non-deterministi
 ### Important program files
 1) <b>thompson.py</b> - The class thompson.py contains all the rules for this project to work. It stores important functions which are used to determine does a certain regular expression match a given string.
 2) <b>testing.py</b> - This class used as a module so it can import thompson.py. It matches infix regular expressions to strings, the data in this class has been hardcoded.
-3) <b>prompt.py</b> - I have developed a class that allows for user input. When a regular expression and a string is entered, the program then (by the help of the import keyword) follows the rules applied in "thompson.py" and detremines does the regular expression match the string specified.
-4) <b>project.py</b> - I added an additional class called "project.py" that shows a differant way to parse a regular expression from infix to postfix. I followed a youtube video to do this. [Link](https://www.youtube.com/watch?v=cD6qkvOYL_o&t=15s)
+3) <b>prompt.py</b> - I have developed a class that allows for user input. When a regular expression and a string is entered, the program then (by the help of the import keyword) follows the rules applied in "thompson.py" and determines does the regular expression match the string specified.
+4) <b>project.py</b> - I added an additional class called "project.py" that shows a different way to parse a regular expression from infix to postfix. I followed a YouTube video to do this. [Link](https://www.youtube.com/watch?v=cD6qkvOYL_o&t=15s)
 5) <b>finaltesting.py</b> - This class contains more tests relating to regular expressions and strings it imports "thompson.py" to do so. It carries out numerous tests using the assert keyword to test every operator e.g. | . * + ?
-6) <b>Help.py</b> - Allows users to learn how to use the program. Includes names of each class, command to use the class and a brief description of of what each class does.
+6) <b>Help.py</b> - Allows users to learn how to use the program. Includes names of each class, command to use the class and a brief description of what each class does.
 7) <b>VSCREADME.txt</b> - I created a README using visual studio code.
-8) <b>Thompson's expressions & descriptions</b> - Contains useful diagrams and descriptions of regular expression operators. I created most of these diagrams myself with the use of microsoft paint.
+8) <b>Thompson's expressions & descriptions</b> - Contains useful diagrams and descriptions of regular expression operators. I created most of these diagrams myself with the use of Microsoft paint.
 
 ## Algorithm
 ### Thompsons Construction
-Thompson construction was created by the famous computer scientist Ken Thompson. Thompson construction is a method of transforming a regular expression (regex) into an equivalent nondeterministic finite automaton (NFA). This NFA can be used to match strings to their corresponding regular expression. The algorithm works by splitting an expression into its corresponding subexpressions. Regex and NFA are two representations of formal languages.The algorithm works best by splitting an expression into its constituent subexpressions.
+Thompson construction was created by the famous computer scientist Ken Thompson. Thompson construction is a method of transforming a regular expression (regex) into an equivalent nondeterministic finite automaton (NFA). This NFA can be used to match strings to their corresponding regular expression. The algorithm works by splitting an expression into its corresponding subexpressions. Regex and NFA are two representations of formal languages. The algorithm works best by splitting an expression into its constituent subexpressions.
 
 ### Regular Expression<br>
 The concept of regular expressions arose in the 1950s when an American mathematician Stephen Cole Kleene formalized the description of a regular language. A regular expression (also called regex) is a string containing a series of characters, these special characters have a specific meaning. They are mainly used in search engines and many programming languages already provide regex capabilities either built-in or with the use of libraries. Essentially regular expressions are used as a search pattern for matching one or more characters within a string, therefore for this reason they are perfect for the implementation of this Graph Theory project. Some examples of regular expression operators are ? + | ^ . $ ( ) *
@@ -41,11 +41,11 @@ The concept of regular expressions arose in the 1950s when an American mathemati
 
 ### Regular Expression operators<br>
 *Operators used in this Graph Theory project* <br>
-( * ) - The Kleene star is represented as * . It matches the preceding element zero or more times. For example the regular expression ab*c matches "ac", "abc", "abbbc" ect but it does not match "abcd".
+( * ) - The Kleene star is represented as * . It matches the preceding element zero or more times. For example, the regular expression ab*c matches "ac", "abc", "abbbc" ect but it does not match "abcd".
 
-( + ) - The plus operator matches preceding elements one or more times. For example "ab+c" matches "abc", "abbc", "abbbc" and so on, but it does not match "ac".
+( + ) - The plus operator matches preceding elements one or more times. For example, "ab+c" matches "abc", "abbc", "abbbc" and so on, but it does not match "ac".
 
-( | ) - | is knows as the choice operator. It matches either the expression before or after the operator. For example "abc|def" matches either "abc" or "def" but would not match "hij", "abf" ect.
+( | ) - | is known as the choice operator. It matches either the expression before or after the operator. For example, "abc|def" matches either "abc" or "def" but would not match "hij", "abf" ect.
 
 ( ? ) - This operator matches the preceding element zero or once. For example, "ab?c" matches only "ac" or "abc".
 
@@ -56,9 +56,9 @@ The concept of regular expressions arose in the 1950s when an American mathemati
 
 ( ^ ) - This regex operator matches the starting position of any line.
 
-( [] ) - The opened and closed square brackets matches a single character that is located within the brackets. For example  "[abc]" matches characters "a", "b" or "c". Regex "[a-z]" matches any lowercase character from a to z.
+( [] ) - The opened and closed square brackets matches a single character that is located within the brackets. For example, "[abc]" matches characters "a", "b" or "c". Regex "[a-z]" matches any lowercase character from a to z.
 
-( [^] ) - This specific operator matches a single character that is not contained within the square brackets. For example   "[^def]" matches any characters other than "d", "e" or "f".
+( [^] ) - This specific operator matches a single character that is not contained within the square brackets. For example, "[^def]" matches any characters other than "d", "e" or "f".
 
 ### Non-deterministic finite automaton<br>
 NFAs were introduced in 1959 by Michael O. Rabin and Dana Scott. An NFA is a state machine that consists of numerous states that can accept or reject a finite string. An NFA can have any number of arrows for each state and symbol.<br>
@@ -66,7 +66,7 @@ I have created diagrams converting important regex operator to their NFA forms [
 
 ### Beginner calculations<br>
 <b> Converting X|YZ to NFA format </b> <br>
-For this equation i broke the regex up into smaller parts. Diagram 1 demonstrates the Or operators functionality between "X" and "YZ". The Or operator in this case has two transitions between them. Diagram 2 demonstrates breaking down the "YZ" into its constituent components. YZ has an intermediate state. The circle on the left is called the begining state and the right circle is called the accept state. I created and designed these diagrams myself using the microsoft paint application on my PC <br>
+For this equation i broke the regex up into smaller parts. Diagram 1 demonstrates the Or operators functionality between "X" and "YZ". The Or operator in this case has two transitions between them. Diagram 2 demonstrates breaking down the "YZ" into its constituent components. YZ has an intermediate state. The circle on the left is called the beginning state and the right circle is called the accept state. I created and designed these diagrams myself using the Microsoft paint application on my PC <br>
 
 <p align="center">
   <img src="https://github.com/GraceKeane/GraphTheoryProject_G00359990/blob/master/Thompson's%20expressions%20%26%20descriptions/cal1.PNG" width="250" height="250">
@@ -80,13 +80,13 @@ For this equation i broke the regex up into smaller parts. Diagram 1 demonstrate
 
 ### Infix and Postfix notations
 Infix: For example - a operand b. When an operator is in-between every pair of operands. 
-Postfix:For example - a b operand. When an operator is followed by every pair of operands.
+Postfix: For example - a b operand. When an operator is followed by every pair of operands.
 
-These operators forms mathematical expressions using parentheses. I have described the various precidence levels and rules in readMe.md.
+These operators forms mathematical expressions using parentheses. I have described the various precedence levels and rules in readMe.md.
 
-An example of infix notation would be A * B + C / D. If I converted that equation to postfix it would follow the rules of precidence and the output would be + * A B/ C D.
+An example of infix notation would be A * B + C / D. If I converted that equation to postfix it would follow the rules of precedence and the output would be + * A B/ C D.
 
-### Program implementation stepts
+### Program implementation steps
 *Easier to implement this program in steps rather than altogether*
 1) Parse the regular expression from infix to postfix notation.
 2) Build a series of small NFA’s for parts of the regular expression.
@@ -95,18 +95,18 @@ An example of infix notation would be A * B + C / D. If I converted that equatio
 
 ## Run
 ### Various downloads needed
-In order to create this project yourself various accounts must be created and some libraries must be downloaded.
-1) <b>[Google cloud account](https://accounts.google.com/ServiceLogin/signinchooser?service=cloudconsole&passive=1209600&osid=1&continue=https%3A%2F%2Fconsole.cloud.google.com%2Fgetting-started%3Fproject%3Ddirected-smoke-265423%26pli%3D1%26login%3Dtrue%26ref%3Dhttps%3A%2F%2Faccounts.google.com%2FLogout%3Fservice%253Dcloudconsole%2526continue%253Dhttps%3A%2F%2Fconsole.cloud.google.com%2Fgetting-started%3Fproject%25253Ddirected-smoke-265423%252526pli%25253D1%2526hl%253Den_US&followup=https%3A%2F%2Fconsole.cloud.google.com%2Fgetting-started%3Fproject%3Ddirected-smoke-265423%26pli%3D1%26login%3Dtrue%26ref%3Dhttps%3A%2F%2Faccounts.google.com%2FLogout%3Fservice%253Dcloudconsole%2526continue%253Dhttps%3A%2F%2Fconsole.cloud.google.com%2Fgetting-started%3Fproject%25253Ddirected-smoke-265423%252526pli%25253D1%2526hl%253Den_US&flowName=GlifWebSignIn&flowEntry=ServiceLogin)</b> - For this project I used Google Cloude's virtual machine engine.
-2) <b>[Github account](https://github.com/)</b> - I used my github account to store and manage my Graph Theory project
-3) <b>sudo apt update </b> - apt is the package manager for debian. Essentially this command tells apt to go the package lists for debian. 
-4) <b>sudo apt upgrade</b> - Downloades the newest versions of debian.
+In order to create this project yourself various accounts must be created, and some libraries must be downloaded.
+1) <b>[Google cloud account](https://accounts.google.com/ServiceLogin/signinchooser?service=cloudconsole&passive=1209600&osid=1&continue=https%3A%2F%2Fconsole.cloud.google.com%2Fgetting-started%3Fproject%3Ddirected-smoke-265423%26pli%3D1%26login%3Dtrue%26ref%3Dhttps%3A%2F%2Faccounts.google.com%2FLogout%3Fservice%253Dcloudconsole%2526continue%253Dhttps%3A%2F%2Fconsole.cloud.google.com%2Fgetting-started%3Fproject%25253Ddirected-smoke-265423%252526pli%25253D1%2526hl%253Den_US&followup=https%3A%2F%2Fconsole.cloud.google.com%2Fgetting-started%3Fproject%3Ddirected-smoke-265423%26pli%3D1%26login%3Dtrue%26ref%3Dhttps%3A%2F%2Faccounts.google.com%2FLogout%3Fservice%253Dcloudconsole%2526continue%253Dhttps%3A%2F%2Fconsole.cloud.google.com%2Fgetting-started%3Fproject%25253Ddirected-smoke-265423%252526pli%25253D1%2526hl%253Den_US&flowName=GlifWebSignIn&flowEntry=ServiceLogin)</b> - For this project I used Google Cloud's virtual machine engine.
+2) <b>[GitHub account](https://github.com/)</b> - I used my GitHub account to store and manage my Graph Theory project
+3) <b>sudo apt update </b> - apt is the package manager for Debian. Essentially this command tells apt to go the package lists for Debian. 
+4) <b>sudo apt upgrade</b> - Downloads the newest versions of Debian.
 5) <b>sudo apt install git</b> - Installer command for git.
-6) <b>sudo apt install build-essential</b> - You will need to install gcc. This command installes collections of software for gcc. Build essential is very useful to download for any piece of software because when downloading any code from online sites they tipically require gss.
+6) <b>sudo apt install build-essential</b> - You will need to install GCC. This command installs collections of software for GCC. Build essential is very useful to download for any piece of software because when downloading any code from online sites they typically require GCC.
 7) <b>sudo apt install wget</b> - wget is very useful for downloading files.
-8) <b>sudo apt install ipython3</b> - On your Google cloud SSH engine you need to download ipython. This downloads python version 3. It is a better environment for creating python programs because it contains various repel effects, formatting and colors.
+8) <b>sudo apt install ipython3</b> - On your Google cloud SSH engine you need to download ipython. This downloads python version 3. It is a better environment for creating python programs because it contains various repel effects, formatting and colours.
 
 ### Commands to run your code
-1) <b>git clone GitLinkHere</b> - This clones the specified GitHub repository into the VM. 
+1) <b>git clone GitLinkHere</b> - This command clones the specified GitHub repository into the VM. 
 2) <b>ls -al</b> - Shows all files in a directory
 3) <b>vi file.py</b> - This command allows you to create a new python file called file.py.
 4) <b>vi file.py</b> - By running this command it allows you to view and edit python code in file.py.
@@ -117,9 +117,9 @@ In order to create this project yourself various accounts must be created and so
 For this project I added numerus classes and functions to test does my code actually work. 
 
 *Classes I used to test my code*
-1) <b>prompt.py</b> - This class imports the main class thompson.py as a basis for this testing. I created this class to allow for user input. When python prompt.py is ran the user is met with a series of questions. First they are asked to input a regular expression and then they are asked to enter a string to match the regex with. If they both match a succesful message appears and if not the user is notified that the inputted regular expression des not match the specified string. Users have the oppertunity to ender as much tests as needed. By entering "q" the prompt ends.
+1) <b>prompt.py</b> - This class imports the main class thompson.py as a basis for this testing. I created this class to allow for user input. When python prompt.py is ran the user is met with a series of questions. First, they are asked to input a regular expression and then they are asked to enter a string to match the regex with. If they both match a successful message appears and if not the user is notified that the inputted regular expression des not match the specified string. Users can ender as much tests as needed. By entering "q" the prompt ends.
 2) <b>finaltesting.py</b> - This class imports the main class thompson.py as a basis for this testing. It contains all hardcoded data. Finaltesting.py matches the specified regex with the assigned string. If all data in the class is correct the user is met with a blank answer when finaltesting.py is run. If data is incorrect an error message will appear. I used the "assert" and "assert not" keywords for the implementation of these tests.
-3) <b>project.py</b> - At the end of the project.py class I added various tested to see does the infix match the assigned postfix format. The outpus of this class determines do the two formats match. 
+3) <b>project.py</b> - At the end of the project.py class I added various tested to see does the infix match the assigned postfix format. The outputs of this class determines do the two formats match. 
 4) <b>testing.py</b> - This class imports the main class thompson.py as a basis for this testing. This class uses thompson.match to determine does the regex match the specified string. When ran the console outputs "True" or "False".
 
 ## Referances
