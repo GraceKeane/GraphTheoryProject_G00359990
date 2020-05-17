@@ -15,12 +15,12 @@ For this project I am instructed to implement thompson's construction algorithm 
 ## Architecture
 1) <b>thompson.py</b> - The class thompson.py contains all the rules for this project to work. It stores important functions which are used to determine does a certain regular expression match a given string.
 2) <b>testing.py</b> - This class used as a module so it can import thompson.py. It matches infix regular expressions to strings, the data in this class has been hardcoded.
-3) <b>prompt.py</b> - I have developed a class that allows for user input. When a regular expression and a string is entered, the program then (by the help of the import keyword) follows the rules applied in "thompson.py" and detremines does the regular expression match the string specified.
-4) <b>project.py</b> - I added an additional class called "project.py" that shows a differant way to parse a regular expression from infix to postfix. I followed a youtube video to do this. [Link](https://www.youtube.com/watch?v=cD6qkvOYL_o&t=15s)
+3) <b>prompt.py</b> - I have developed a class that allows for user input. When a regular expression and a string is entered, the program then (by the help of the import keyword) follows the rules applied in "thompson.py" and determines does the regular expression match the string specified.
+4) <b>project.py</b> - I added an additional class called "project.py" that shows a different way to parse a regular expression from infix to postfix. I followed a YouTube video to do this. [Link](https://www.youtube.com/watch?v=cD6qkvOYL_o&t=15s)
 5) <b>finaltesting.py</b> - This class contains more tests relating to regular expressions and strings it imports "thompson.py" to do so. It carries out numerous tests using the assert keyword to test every operator e.g. | . * + ?
-6) <b>Help.py</b> - Allows users to learn how to use the program. Includes names of each class, command to use the class and a brief description of of what each class does.
+6) <b>Help.py</b> - Allows users to learn how to use the program. Includes names of each class, command to use the class and a brief description of what each class does.
 7) <b>VSCREADME.txt</b> - I created a README using visual studio code.
-8) <b>Thompson's expressions & descriptions</b> - Contains useful diagrams and descriptions of regular expression operators. I created most of these diagrams myself with the use of microsoft paint.
+8) <b>Thompson's expressions & descriptions</b> - Contains useful diagrams and descriptions of regular expression operators. I created most of these diagrams myself with the use of Microsoft paint.
 
 ## What I learned 
 * The syntax for regular expressions
