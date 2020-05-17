@@ -4,12 +4,14 @@
 * [Introduction](#introduction)<br>
   * [Program implementation stepts](#program-implementation-stepts)
   * [Important program files](#important-program-files)
-  * [Infix & Postfix notations](#infix-&-postfix-notations)
+  * [Infix and Postfix notations](#infix-and-postfix-notations)
   * [Regular Expression](#regular-expression)
   * [Regular Expression operators](#regular-expression-operators)
   * [Non-deterministic finite automaton](#non-deterministic-finite-automaton)
   * [Beginner calculations](#Beginner-calculations)
-* [Run for Thompsons Construction](#run)<br>
+* [Run](#run)<br>
+  * [Various downloads needed](various-downloads-needed)
+  * [Commands to run your code](commands-to-run-your-code)
 * [Test](#test)<br>
 * [Algorithm](#algorithm)<br>
 * [Referances](#referances)
@@ -35,7 +37,7 @@ For this assignment I created a Python program that can build a non-deterministi
 7) "VSCREADME.txt" - I created a README using visual studio code.
 8) "Thompson's expressions & descriptions" - Contains useful diagrams and descriptions of regular expression operators. I created most of these diagrams myself with the use of microsoft paint.
 
-### Infix & Postfix notations
+### Infix and Postfix notations
 Infix: For example - a operand b. When an operator is in-between every pair of operands. 
 Postfix:For example - a b operand. When an operator is followed by every pair of operands.
 
@@ -72,7 +74,7 @@ The concept of regular expressions arose in the 1950s when the American mathemat
 NFAs were introduced in 1959 by Michael O. Rabin and Dana Scott. An NFA is a state machine that consists of numerous states that can accept or reject a finite string. Non-deterministic finite automata can have any number of arrows for each state and symbol.<br>
 I have created diagrams converting imortant regex operator to their NFA forms [here](https://github.com/GraceKeane/GraphTheoryProject_G00359990/tree/master/Thompson's%20expressions%20%26%20descriptions)
 
-### Beginner calculations <br>
+### Beginner calculations<br>
 <b> Converting X|YZ to NFA format </b> <br>
 For this equation i broke the regex up into smaller parts. Diagram 1 demonstrates the Or operators functionality between "X" and "YZ". The Or operator in this case has two transitions between them. Diagram 2 demonstrates breaking down the "YZ" into its constituent components. YZ has an intermediate state. The circle on the left is called the begining state and the right circle is called the accept state. I created and designed these diagrams myself using the microsoft paint application on my PC <br>
 
@@ -99,12 +101,12 @@ In order to create this project yourself various accounts must be created and so
 8) <b>sudo apt install ipython3</b> - On your Google cloud SSH engine you need to download ipython. This downloads python version 3. It is a better environment for creating python programs because it contains various repel effects, formatting and colors.
 
 ### Commands to run your code
-1) git clone GitLinkHere - This clones the specified GitHub repository into the VM. 
-2) ls -al - Shows all files in a directory
-3) vi file.py - This command allows you to create a new python file called file.py.
-4) vi file.py - By running this command it allows you to view and edit python code in file.py.
-5) python file.py - This command runs your python file. It executed the results of your code in file.py.
-6) rm file.py - If you wish to delete a file completely you use the rm command along with the file you wish to delete.
+1) <b>git clone GitLinkHere</b> - This clones the specified GitHub repository into the VM. 
+2) <b>ls -al</b> - Shows all files in a directory
+3) <b>vi file.py</b> - This command allows you to create a new python file called file.py.
+4) <b>vi file.py</b> - By running this command it allows you to view and edit python code in file.py.
+5) <b>python file.py</b> - This command runs your python file. It executed the results of your code in file.py.
+6) <b>rm file.py</b> - If you wish to delete a file completely you use the rm command along with the file you wish to delete.
 
 ## Test
 How did i test the program
