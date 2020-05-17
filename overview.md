@@ -5,14 +5,15 @@
   * [Program implementation stepts](#program-implementation-stepts)
   * [Important program files](#important-program-files)
 * [Algorithm](#algorithm)<br>
-  * [Infix and Postfix notations](#infix-and-postfix-notations)
+  * [Thompsons Construction](#thompsons-construction)
   * [Regular Expression](#regular-expression)
   * [Regular Expression operators](#regular-expression-operators)
   * [Non-deterministic finite automaton](#non-deterministic-finite-automaton)
   * [Beginner calculations](#Beginner-calculations)
+  * [Infix and Postfix notations](#infix-and-postfix-notations)
 * [Run](#run)<br>
-  * [Various downloads needed](various-downloads-needed)
-  * [Commands to run your code](commands-to-run-your-code)
+  * [Various downloads needed](#various-downloads-needed)
+  * [Commands to run your code](#commands-to-run-your-code)
 * [Test](#test)<br>
 * [Referances](#referances)
 <br></br>
@@ -38,15 +39,8 @@ For this assignment I created a Python program that can build a non-deterministi
 8) <b>Thompson's expressions & descriptions</b> - Contains useful diagrams and descriptions of regular expression operators. I created most of these diagrams myself with the use of microsoft paint.
 
 ## Algorithm
-Thompson construction was created by the famous computer scientist Ken Thompson. Thompson construction is a method of transforming a regular expression into an equivalent nondeterministic finite automaton. This NFA can be used to match strings against the regular expression. The algorithm works by splitting an expression into its corresponding subexpressions. 
-
-### Infix and Postfix notations
-Infix: For example - a operand b. When an operator is in-between every pair of operands. 
-Postfix:For example - a b operand. When an operator is followed by every pair of operands.
-
-These operators forms mathematical expressions using parentheses. I have described the various precidence levels and rules in readMe.md.
-
-An example of infix notation would be A * B + C / D. If I converted that equation to postfix it would follow the rules of precidence and the output would be + * A B/ C D.
+### Thompsons Construction
+Thompson construction was created by the famous computer scientist Ken Thompson. Thompson construction is a method of transforming a regular expression into an equivalent nondeterministic finite automaton. This NFA can be used to match strings to there corresponding regular expression. The algorithm works by splitting an expression into its corresponding subexpressions. Regex and NFA are two representations of formal languages.The algorithm works recursively by splitting an expression into its constituent subexpressions.
 
 ### Regular Expression<br>
 The concept of regular expressions arose in the 1950s when the American mathematician Stephen Cole Kleene formalized the description of a regular language. A regular expression (also called regex) is a string containing a series of characters, these special characters have a special meaning. They are mainly used in search engines and many programming languages provide regex capabilities either built-in or with the use of libraries. Essentially regular expressions are used as a search pattern for matching one or more characters within a string, therefore for this reason they are perfect for the implementation of this Graph Theory project. Some examples of regular expression operators are ? + | ^ . $ ( ) *
@@ -90,6 +84,14 @@ For this equation i broke the regex up into smaller parts. Diagram 1 demonstrate
   <img src="https://github.com/GraceKeane/GraphTheoryProject_G00359990/blob/master/Thompson's%20expressions%20%26%20descriptions/cal2.PNG" width="250" height="250">
 </p>
 <b>Diagram 2</b> 
+
+### Infix and Postfix notations
+Infix: For example - a operand b. When an operator is in-between every pair of operands. 
+Postfix:For example - a b operand. When an operator is followed by every pair of operands.
+
+These operators forms mathematical expressions using parentheses. I have described the various precidence levels and rules in readMe.md.
+
+An example of infix notation would be A * B + C / D. If I converted that equation to postfix it would follow the rules of precidence and the output would be + * A B/ C D.
 
 ## Run
 ### Various downloads needed
