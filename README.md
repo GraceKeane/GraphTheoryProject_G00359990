@@ -8,7 +8,7 @@ A regular expression is a string containing a series of characters that have spe
 
 Python has well-defined rules for specifying the order in which the operators in an expression are evaluated when the expression has several operators. For example, multiplication and division have a higher precedence than addition and subtraction. Precedence rules can be overridden by explicit parentheses.
 
-*Order of precidencel levels*
+*Order of precedence levels*
 1) ( * )
 2) ( . )
 2) ( + )
@@ -19,7 +19,7 @@ The Thompsons construction algorithm works by splitting an expression into its c
 
 *More information is available in my [overview.md](https://github.com/GraceKeane/GraphTheoryProject_G00359990/blob/master/overview.md) file*
 
-For this project I am instructed to implement thompson's construction algorithm to determine does a given regular expression match the string assigned.
+For this project I am instructed to implement Thompson’s construction algorithm to determine does a given regular expression match the string assigned.
 
 ## Architecture
 1) <b>thompson.py</b> - The class thompson.py contains all the rules for this project to work. It stores important functions which are used to determine does a certain regular expression match a given string.
@@ -37,9 +37,9 @@ For this project I am instructed to implement thompson's construction algorithm 
 * How to understand the internals of the Google Cloud SSH engine
 * How to break a complex problem into smaller problems
 * Different ways of thinking about the problem
-* Differance between regular expressions
+* Difference  between regular expressions
 * How to create a README using Visual studio code
-* How to create and merge braches in GitHub
+* How to create and merge branches in GitHub
 * How to use words as links in GitHub README
 * How to add images and videos to a git readMe.md
 * How to create a table of contents containing headings and subheadings in Git
@@ -64,7 +64,7 @@ I had problems submitting my code to git. Usually when I committed my code it pu
 
 [Research link](https://www.youtube.com/watch?v=JTE2Fn_sCZs)
 
-## Referances
+## References
 * Describing what an NFA is essentially - [Nondeterministic finite automaton](https://en.wikipedia.org/wiki/Nondeterministic_finite_automaton)
 * How to implementing a regular expression engine - [Implementing a Regular Expression Engine](https://deniskyashif.com/2019/02/17/implementing-a-regular-expression-engine/)
 * Infix to postfix algorithm - [Infix to postfix - algorithm and exercises](https://www.youtube.com/watch?v=yTpzVWO1Dis)
@@ -72,14 +72,14 @@ I had problems submitting my code to git. Usually when I committed my code it pu
 * Research of what the Kleene star is essentially - [Kleene star](https://en.wikipedia.org/wiki/Kleene_star)
 * What a Unary operation is essentially - [Unary operation](https://en.wikipedia.org/wiki/Unary_operation)
 * More research on regular expressions - [Regular expressions](https://en.wikipedia.org/wiki/Regular_expression)
-* VScode readME research - [Using Git with VS Code and Github](https://www.youtube.com/watch?v=9cMWR-EGFuY)
+* VScode readME research - [Using Git with VS Code and GitHub](https://www.youtube.com/watch?v=9cMWR-EGFuY)
 * More VSCode readME research - [Markdown and Visual Studio Code](https://code.visualstudio.com/docs/languages/markdown)
 * Research on how to use titles as links - [Getting Started With GitHub, Part 3: Creating a Read Me File in Markdown](https://www.youtube.com/watch?v=yXY3f9jw7fg)
 * Additional ways of implementing infix to postfix in python - [Infix to postfix in python](https://www.youtube.com/watch?v=cD6qkvOYL_o&t=15s)
 * Describing what a regular expression is essentially - [Regular language](https://en.wikipedia.org/wiki/Regular_language)
 * Research of what Thompson's construction consists of - [Thompson's construction](https://en.wikipedia.org/wiki/Thompson%27s_construction)
 * Showed me the various regular expressions and functions - [Regular Expressions](https://www.tldp.org/LDP/Bash-Beginners-Guide/html/sect_04_01.html) 
-* [C Operator Precedence](https://en.cppreference.com/w/c/language/operator_precedence) - Shows the hierarchy of regex precidence.
+* [C Operator Precedence](https://en.cppreference.com/w/c/language/operator_precedence) - Shows the hierarchy of regex precedence.
 
 ## Class videos implemented
 ### I implemented the code from the videos separately so that I can see how the application can be broken up into smaller parts
