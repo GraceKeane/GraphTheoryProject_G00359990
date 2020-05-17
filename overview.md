@@ -109,7 +109,13 @@ In order to create this project yourself various accounts must be created and so
 6) <b>rm file.py</b> - If you wish to delete a file completely you use the rm command along with the file you wish to delete.
 
 ## Test
-How did i test the program
+For this project I added numerus classes and functions to test does my code actually work. 
+
+*Classes I used to test my code*
+1) <b>prompt.py</b> - This class imports the main class thompson.py as a basis for this testing. I created this class to allow for user input. When python prompt.py is ran the user is met with a series of questions. First they are asked to input a regular expression and then they are asked to enter a string to match the regex with. If they both match a succesful message appears and if not the user is notified that the inputted regular expression des not match the specified string. Users have the oppertunity to ender as much tests as needed. By entering "q" the prompt ends.
+2) <b>finaltesting.py</b> - This class imports the main class thompson.py as a basis for this testing. It contains all hardcoded data. Finaltesting.py matches the specified regex with the assigned string. If all data in the class is correct the user is met with a blank answer when finaltesting.py is run. If data is incorrect an error message will appear. I used the "assert" and "assert not" keywords for the implementation of these tests.
+3) <b>project.py</b> - At the end of the project.py class I added various tested to see does the infix match the assigned postfix format. The outpus of this class determines do the two formats match. 
+4) <b>testing.py</b> - This class imports the main class thompson.py as a basis for this testing. This class uses thompson.match to determine does the regex match the specified string. When ran the console outputs "True" or "False".
 
 ## Algorithm
 Thompson construction was created by the famous computer scientist Ken Thompson. Thompson construction is a method of transforming a regular expression into an equivalent nondeterministic finite automaton. This NFA can be used to match strings against the regular expression. The algorithm works by splitting an expression into its corresponding subexpressions. 
