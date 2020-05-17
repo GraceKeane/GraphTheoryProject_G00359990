@@ -2,7 +2,6 @@
 
 ## Contents
 * [Introduction](#introduction)<br>
-  * [Program implementation stepts](#program-implementation-stepts)
   * [Important program files](#important-program-files)
 * [Algorithm](#algorithm)<br>
   * [Thompsons Construction](#thompsons-construction)
@@ -11,6 +10,7 @@
   * [Non-deterministic finite automaton](#non-deterministic-finite-automaton)
   * [Beginner calculations](#Beginner-calculations)
   * [Infix and Postfix notations](#infix-and-postfix-notations)
+  * [Program implementation stepts](#program-implementation-stepts)
 * [Run](#run)<br>
   * [Various downloads needed](#various-downloads-needed)
   * [Commands to run your code](#commands-to-run-your-code)
@@ -20,13 +20,6 @@
 
 ## Introduction
 For this assignment I created a Python program that can build a non-deterministic finite automaton (NFA) from a regular expression. It then can use the NFA to check if the regular expression matches any hardcoded or prompted string of text. The program is based off an algorithm known as Thompson’s construction, named after the well-known computer scientist Ken Thompson.
-
-### Program implementation stepts
-*Easier to implement this program in steps rather than altogether*
-1) Parse the regular expression from infix to postfix notation.
-2) Build a series of small NFA’s for parts of the regular expression.
-3) Use the smaller NFA’s to create the overall NFA.
-4) Implement the matching algorithm using the NFA.
 
 ### Important program files
 1) <b>thompson.py</b> - The class thompson.py contains all the rules for this project to work. It stores important functions which are used to determine does a certain regular expression match a given string.
@@ -40,10 +33,10 @@ For this assignment I created a Python program that can build a non-deterministi
 
 ## Algorithm
 ### Thompsons Construction
-Thompson construction was created by the famous computer scientist Ken Thompson. Thompson construction is a method of transforming a regular expression into an equivalent nondeterministic finite automaton. This NFA can be used to match strings to there corresponding regular expression. The algorithm works by splitting an expression into its corresponding subexpressions. Regex and NFA are two representations of formal languages.The algorithm works recursively by splitting an expression into its constituent subexpressions.
+Thompson construction was created by the famous computer scientist Ken Thompson. Thompson construction is a method of transforming a regular expression (regex) into an equivalent nondeterministic finite automaton (NFA). This NFA can be used to match strings to their corresponding regular expression. The algorithm works by splitting an expression into its corresponding subexpressions. Regex and NFA are two representations of formal languages.The algorithm works best by splitting an expression into its constituent subexpressions.
 
 ### Regular Expression<br>
-The concept of regular expressions arose in the 1950s when the American mathematician Stephen Cole Kleene formalized the description of a regular language. A regular expression (also called regex) is a string containing a series of characters, these special characters have a special meaning. They are mainly used in search engines and many programming languages provide regex capabilities either built-in or with the use of libraries. Essentially regular expressions are used as a search pattern for matching one or more characters within a string, therefore for this reason they are perfect for the implementation of this Graph Theory project. Some examples of regular expression operators are ? + | ^ . $ ( ) *
+The concept of regular expressions arose in the 1950s when an American mathematician Stephen Cole Kleene formalized the description of a regular language. A regular expression (also called regex) is a string containing a series of characters, these special characters have a specific meaning. They are mainly used in search engines and many programming languages already provide regex capabilities either built-in or with the use of libraries. Essentially regular expressions are used as a search pattern for matching one or more characters within a string, therefore for this reason they are perfect for the implementation of this Graph Theory project. Some examples of regular expression operators are ? + | ^ . $ ( ) *
 <br>
 
 ### Regular Expression operators<br>
@@ -68,8 +61,8 @@ The concept of regular expressions arose in the 1950s when the American mathemat
 ( [^] ) - This specific operator matches a single character that is not contained within the square brackets. For example   "[^def]" matches any characters other than "d", "e" or "f".
 
 ### Non-deterministic finite automaton<br>
-NFAs were introduced in 1959 by Michael O. Rabin and Dana Scott. An NFA is a state machine that consists of numerous states that can accept or reject a finite string. Non-deterministic finite automata can have any number of arrows for each state and symbol.<br>
-I have created diagrams converting imortant regex operator to their NFA forms [here](https://github.com/GraceKeane/GraphTheoryProject_G00359990/tree/master/Thompson's%20expressions%20%26%20descriptions)
+NFAs were introduced in 1959 by Michael O. Rabin and Dana Scott. An NFA is a state machine that consists of numerous states that can accept or reject a finite string. An NFA can have any number of arrows for each state and symbol.<br>
+I have created diagrams converting important regex operator to their NFA forms [here](https://github.com/GraceKeane/GraphTheoryProject_G00359990/tree/master/Thompson's%20expressions%20%26%20descriptions)
 
 ### Beginner calculations<br>
 <b> Converting X|YZ to NFA format </b> <br>
@@ -92,6 +85,13 @@ Postfix:For example - a b operand. When an operator is followed by every pair of
 These operators forms mathematical expressions using parentheses. I have described the various precidence levels and rules in readMe.md.
 
 An example of infix notation would be A * B + C / D. If I converted that equation to postfix it would follow the rules of precidence and the output would be + * A B/ C D.
+
+### Program implementation stepts
+*Easier to implement this program in steps rather than altogether*
+1) Parse the regular expression from infix to postfix notation.
+2) Build a series of small NFA’s for parts of the regular expression.
+3) Use the smaller NFA’s to create the overall NFA.
+4) Implement the matching algorithm using the NFA.
 
 ## Run
 ### Various downloads needed
