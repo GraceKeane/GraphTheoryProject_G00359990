@@ -7,11 +7,11 @@ A regular expression is a string containing a series of characters that have spe
 Python has well-defined rules for specifying the order in which the operators in an expression are evaluated when the expression has several operators. For example, multiplication and division have a higher precedence than addition and subtraction. Precedence rules can be overridden by explicit parentheses.
 
 *Order of precidencel levels*
-1) *
-2) .
-2) +
-3) |
-4) ?
+1) ( * )
+2) ( . )
+2) ( + )
+3) ( | )
+4) ( ? )
 
 The Thompsons construction algorithm works by splitting an expression into its constituent subexpressions. This algorithm is created by a computer scientist called Kem Thompson.
 
