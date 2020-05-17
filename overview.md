@@ -88,7 +88,7 @@ For this equation i broke the regex up into smaller parts. Diagram 1 demonstrate
 
 ## Run
 ### Various downloads needed
-In order to create this project yourself various libraries must be downloaded.
+In order to create this project yourself various accounts must be created and some libraries must be downloaded.
 1) <b>[Google cloud account](https://accounts.google.com/ServiceLogin/signinchooser?service=cloudconsole&passive=1209600&osid=1&continue=https%3A%2F%2Fconsole.cloud.google.com%2Fgetting-started%3Fproject%3Ddirected-smoke-265423%26pli%3D1%26login%3Dtrue%26ref%3Dhttps%3A%2F%2Faccounts.google.com%2FLogout%3Fservice%253Dcloudconsole%2526continue%253Dhttps%3A%2F%2Fconsole.cloud.google.com%2Fgetting-started%3Fproject%25253Ddirected-smoke-265423%252526pli%25253D1%2526hl%253Den_US&followup=https%3A%2F%2Fconsole.cloud.google.com%2Fgetting-started%3Fproject%3Ddirected-smoke-265423%26pli%3D1%26login%3Dtrue%26ref%3Dhttps%3A%2F%2Faccounts.google.com%2FLogout%3Fservice%253Dcloudconsole%2526continue%253Dhttps%3A%2F%2Fconsole.cloud.google.com%2Fgetting-started%3Fproject%25253Ddirected-smoke-265423%252526pli%25253D1%2526hl%253Den_US&flowName=GlifWebSignIn&flowEntry=ServiceLogin)</b> - For this project I used Google Cloude's virtual machine engine.
 2) <b>[Github account](https://github.com/)</b> - I used my github account to store and manage my Graph Theory project
 3) <b>sudo apt update </b> - apt is the package manager for debian. Essentially this command tells apt to go the package lists for debian. 
