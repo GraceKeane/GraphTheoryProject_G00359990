@@ -23,7 +23,7 @@ For this assignment I created a Python program that can build a non-deterministi
 1) Parse the regular expression from infix to postfix notation.
 2) Build a series of small NFA’s for parts of the regular expression.
 3) Use the smaller NFA’s to create the overall NFA.
-4) Implement the matching algorithm using the NFA
+4) Implement the matching algorithm using the NFA.
 
 ### Important program files
 1) "thompson.py" - The class thompson.py contains all the rules for this project to work. It stores important functions which are used to determine does a certain regular expression match a given string.
@@ -31,20 +31,20 @@ For this assignment I created a Python program that can build a non-deterministi
 3) "prompt.py" - I have developed a class that allows for user input. When a regular expression and a string is entered, the program then (by the help of the import keyword) follows the rules applied in "thompson.py" and detremines does the regular expression match the string specified.
 4) "project.py" - I added an additional class called "project.py" that shows a differant way to parse a regular expression from infix to postfix. I followed a youtube video to do this. [Link](https://www.youtube.com/watch?v=cD6qkvOYL_o&t=15s)
 5) "finaltesting.py" - This class contains more tests relating to regular expressions and strings it imports "thompson.py" to do so. It carries out numerous tests using the assert keyword to test every operator e.g. | . * + ?
-6) "Help.py" - Allows users to learn how to use the program. Includes names of each class, class command and a brief description of classes in this programe.
+6) "Help.py" - Allows users to learn how to use the program. Includes names of each class, command to use the class and a brief description of of what each class does.
 7) "VSCREADME.txt" - I created a README using visual studio code.
-8) "Thompson's expressions & descriptions" - Contains useful diagrams and edscriptions of regular expression operators.
+8) "Thompson's expressions & descriptions" - Contains useful diagrams and descriptions of regular expression operators. I created most of these diagrams myself with the use of microsoft paint.
 
 ### Infix & Postfix notations
-Infix: For example the expression of the form a operand b. When an operator is in-between every pair of operands. 
-Postfix:For example the expression of the form a b operand. When an operator is followed by every pair of operands.
+Infix: For example - a operand b. When an operator is in-between every pair of operands. 
+Postfix:For example - a b operand. When an operator is followed by every pair of operands.
 
-These operators formes mathematical expressions using parentheses. I have described the various precidence levels and rules in readMe.md.
+These operators forms mathematical expressions using parentheses. I have described the various precidence levels and rules in readMe.md.
 
 An example of infix notation would be A * B + C / D. If I converted that equation to postfix it would follow the rules of precidence and the output would be + * A B/ C D.
 
 ### Regular Expression<br>
-The concept of regular expressions arose in the 1950s when the American mathematician Stephen Cole Kleene formalized the description of a regular language. A regular expression (regex) is a string containing a series of characters, these special characters have a special meaning. They are mainly used in search engines and many programming languages provide regex capabilities either built-in or via libraries. Essentially regular expressions are used as a search pattern for matching one or more characters within a string, therefore for this reason they are perfect for the implementation of this Graph Theory project. Some examples of regular expression operators are ? + | ^ . $ ( ) *
+The concept of regular expressions arose in the 1950s when the American mathematician Stephen Cole Kleene formalized the description of a regular language. A regular expression (also called regex) is a string containing a series of characters, these special characters have a special meaning. They are mainly used in search engines and many programming languages provide regex capabilities either built-in or with the use of libraries. Essentially regular expressions are used as a search pattern for matching one or more characters within a string, therefore for this reason they are perfect for the implementation of this Graph Theory project. Some examples of regular expression operators are ? + | ^ . $ ( ) *
 <br>
 
 ### Regular Expression operators<br>
@@ -53,20 +53,20 @@ The concept of regular expressions arose in the 1950s when the American mathemat
 
 ( + ) - The plus operator matches preceding elements one or more times. For example "ab+c" matches "abc", "abbc", "abbbc" and so on, but it does not match "ac".
 
-( | ) - | is knows as the choice operator. It matches either the expression before or after the operator. For example "abc|def" matches either "abc" or "def"
+( | ) - | is knows as the choice operator. It matches either the expression before or after the operator. For example "abc|def" matches either "abc" or "def" but would not match "hij", "abf" ect.
 
-( ? ) - This operator matches the preceding element zero or once. For example, "ab?c" matches only "ac" or "abc"
+( ? ) - This operator matches the preceding element zero or once. For example, "ab?c" matches only "ac" or "abc".
 
-( . ) - The dot operator matches any single character. it matches a literal dot. For example, a.c matches "abc", etc, but "a.c" matches only "a", ".", or "c".
+( . ) - The dot operator matches any single character. For example, a.c matches "abc", etc, but "a.c" matches only "a", ".", or "c".
 
 *Other regular expression operators* <br>
-() - The opening and closed bracket defines a marked subexpression
+() - The opening and closed bracket defines a marked subexpression.
 
 ( ^ ) - This regex operator matches the starting position of any line.
 
-( [] ) - The opened and closed square brackets matches a single character that is located within the brackets e.g. "[abc]" matches characters "a", "b" or "c". Regex "[a-z]" matches any lowercase character from a to z.
+( [] ) - The opened and closed square brackets matches a single character that is located within the brackets. For example  "[abc]" matches characters "a", "b" or "c". Regex "[a-z]" matches any lowercase character from a to z.
 
-( [^] ) - This specific operator matches a single character that is not contained within the square brackets. For example "[^def]" matches any characters other than "d", "e" or "f".
+( [^] ) - This specific operator matches a single character that is not contained within the square brackets. For example   "[^def]" matches any characters other than "d", "e" or "f".
 
 ### Non-deterministic finite automaton<br>
 NFAs were introduced in 1959 by Michael O. Rabin and Dana Scott. An NFA is a state machine that consists of numerous states that can accept or reject a finite string. Non-deterministic finite automata can have any number of arrows for each state and symbol.<br>
@@ -74,7 +74,7 @@ I have created diagrams converting imortant regex operator to their NFA forms [h
 
 ### Beginner calculations <br>
 <b> Converting X|YZ to NFA format </b> <br>
-For this equation i broke the regex up into smaller parts. Diagram 1 demonstrates the Or operators functionality between "X" and "YZ". The Or operator in this case has two transitions between them. Diagram 2 demonstrates breaking down the "YZ" into its constituent components. YZ has an intermediate state. The circle on the left is called the begining state and the right circle is called the accept state. I created and designed these diagrams myself using the paint application on my PC <br>
+For this equation i broke the regex up into smaller parts. Diagram 1 demonstrates the Or operators functionality between "X" and "YZ". The Or operator in this case has two transitions between them. Diagram 2 demonstrates breaking down the "YZ" into its constituent components. YZ has an intermediate state. The circle on the left is called the begining state and the right circle is called the accept state. I created and designed these diagrams myself using the microsoft paint application on my PC <br>
 
 <p align="center">
   <img src="https://github.com/GraceKeane/GraphTheoryProject_G00359990/blob/master/Thompson's%20expressions%20%26%20descriptions/cal1.PNG" width="250" height="250">
@@ -87,7 +87,8 @@ For this equation i broke the regex up into smaller parts. Diagram 1 demonstrate
 <b>Diagram 2</b> 
 
 ## Run
-How to run the program
+### Various downloads needed
+In order to create this project yourself various libraries must be downloaded.
 
 ## Test
 How did i test the program
