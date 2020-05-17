@@ -4,6 +4,7 @@
 * [Introduction](#introduction)<br>
   * [Program implementation stepts](#program-implementation-stepts)
   * [Important program files](#important-program-files)
+ * [Algorithm](#algorithm)<br>
   * [Infix and Postfix notations](#infix-and-postfix-notations)
   * [Regular Expression](#regular-expression)
   * [Regular Expression operators](#regular-expression-operators)
@@ -13,7 +14,6 @@
   * [Various downloads needed](various-downloads-needed)
   * [Commands to run your code](commands-to-run-your-code)
 * [Test](#test)<br>
-* [Algorithm](#algorithm)<br>
 * [Referances](#referances)
 <br></br>
 
@@ -36,6 +36,9 @@ For this assignment I created a Python program that can build a non-deterministi
 6) <b>Help.py</b> - Allows users to learn how to use the program. Includes names of each class, command to use the class and a brief description of of what each class does.
 7) <b>VSCREADME.txt</b> - I created a README using visual studio code.
 8) <b>Thompson's expressions & descriptions</b> - Contains useful diagrams and descriptions of regular expression operators. I created most of these diagrams myself with the use of microsoft paint.
+
+## Algorithm
+Thompson construction was created by the famous computer scientist Ken Thompson. Thompson construction is a method of transforming a regular expression into an equivalent nondeterministic finite automaton. This NFA can be used to match strings against the regular expression. The algorithm works by splitting an expression into its corresponding subexpressions. 
 
 ### Infix and Postfix notations
 Infix: For example - a operand b. When an operator is in-between every pair of operands. 
@@ -116,14 +119,6 @@ For this project I added numerus classes and functions to test does my code actu
 2) <b>finaltesting.py</b> - This class imports the main class thompson.py as a basis for this testing. It contains all hardcoded data. Finaltesting.py matches the specified regex with the assigned string. If all data in the class is correct the user is met with a blank answer when finaltesting.py is run. If data is incorrect an error message will appear. I used the "assert" and "assert not" keywords for the implementation of these tests.
 3) <b>project.py</b> - At the end of the project.py class I added various tested to see does the infix match the assigned postfix format. The outpus of this class determines do the two formats match. 
 4) <b>testing.py</b> - This class imports the main class thompson.py as a basis for this testing. This class uses thompson.match to determine does the regex match the specified string. When ran the console outputs "True" or "False".
-
-## Algorithm
-Thompson construction was created by the famous computer scientist Ken Thompson. Thompson construction is a method of transforming a regular expression into an equivalent nondeterministic finite automaton. This NFA can be used to match strings against the regular expression. The algorithm works by splitting an expression into its corresponding subexpressions. 
-
-### Rules for Thompson's construction
-*Regular expression to NFA simple calculation*
-
-
 
 ## Referances
 * Showed me the various regular expressions and functions - [Regular Expressions](https://www.tldp.org/LDP/Bash-Beginners-Guide/html/sect_04_01.html) 
