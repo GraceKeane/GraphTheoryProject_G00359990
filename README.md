@@ -2,9 +2,16 @@
 
 Thompsons construction is a method of transforming a regular expression into an equivalent nondeterministic finite automaton (NFA). NFAs can be used to match strings against the regular expression. NFA is short for non-deterministic finite automaton, It was designed and implemented by Michael O. Rabin and Dana Scott. NFA’s are designed to only recognise regular languages.
 
-A regular expression is a string containing a series of characters that have special meaning. For example, the three characters |, .  and * have the special meanings concatenate, or, and Kleene star. For example, the regular expression 0.1 means a 0 followed by a 1, 0|1 means a 0 or a 1, and 1* means any number of 1’s. More regular expression examples are Plus, times, start, question, end.   
+A regular expression is a string containing a series of characters that have special meaning. For example, the three characters |, .  and * have the special meanings concatenate, or, and Kleene star. For example, the regular expression 0.1 means a 0 followed by a 1, 0|1 means a 0 or a 1, and 1* means any number of 1’s. More regular expression examples are defined in [overview.md](https://github.com/GraceKeane/GraphTheoryProject_G00359990/blob/master/overview.md) file* but for this project I implemented the * | . ? + operators.
 
 Python has well-defined rules for specifying the order in which the operators in an expression are evaluated when the expression has several operators. For example, multiplication and division have a higher precedence than addition and subtraction. Precedence rules can be overridden by explicit parentheses.
+
+*Order of precidencel levels*
+1) *
+2) .
+2) +
+3) |
+4) ?
 
 The Thompsons construction algorithm works by splitting an expression into its constituent subexpressions. This algorithm is created by a computer scientist called Kem Thompson.
 
@@ -70,6 +77,7 @@ I had problems submitting my code to git. Usually when I committed my code it pu
 * Describing what a regular expression is essentially - [Regular language](https://en.wikipedia.org/wiki/Regular_language)
 * Research of what Thompson's construction consists of - [Thompson's construction](https://en.wikipedia.org/wiki/Thompson%27s_construction)
 * Showed me the various regular expressions and functions - [Regular Expressions](https://www.tldp.org/LDP/Bash-Beginners-Guide/html/sect_04_01.html) 
+* [C Operator Precedence](https://en.cppreference.com/w/c/language/operator_precedence) - Shows the hierarchy of regex precidence.
 
 ## Class videos implemented
 ### I implemented the code from the videos separately so that I can see how the application can be broken up into smaller parts
