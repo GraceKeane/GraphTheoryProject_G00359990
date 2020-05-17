@@ -10,7 +10,7 @@
   * [Non-deterministic finite automaton](#non-deterministic-finite-automaton)
   * [Beginner calculations](#Beginner-calculations)
   * [Infix and Postfix notations](#infix-and-postfix-notations)
-  * [Program implementation stepts](#program-implementation-stepts)
+  * [Program implementation stepts](#program-implementation-steps)
 * [Run](#run)<br>
   * [Various downloads needed](#various-downloads-needed)
   * [Commands to run your code](#commands-to-run-your-code)
