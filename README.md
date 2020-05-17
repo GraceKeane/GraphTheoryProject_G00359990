@@ -1,4 +1,6 @@
-# GraphTheoryProject_G00359990 - Grace Keane
+## Graph Theory project
+### Grace Keane
+### ID - G00359990
 
 Thompsons construction is a method of transforming a regular expression into an equivalent nondeterministic finite automaton (NFA). NFAs can be used to match strings against the regular expression. NFA is short for non-deterministic finite automaton, It was designed and implemented by Michael O. Rabin and Dana Scott. NFA’s are designed to only recognise regular languages.
 
