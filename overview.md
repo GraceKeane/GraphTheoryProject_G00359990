@@ -140,3 +140,4 @@ For this project I added numerus classes and functions to test does my code actu
 * More VSCode readME research - [Markdown and Visual Studio Code](https://code.visualstudio.com/docs/languages/markdown)
 * Research on how to use titles as links - [Getting Started With GitHub, Part 3: Creating a Read Me File in Markdown](https://www.youtube.com/watch?v=yXY3f9jw7fg)
 * Simple example of getting raw input from a user in prompt class - [raw_input function in Python](https://stackoverflow.com/a/5563119/13407257)
+* Showed me differant examples of how to use the assert keyword when testing in finaltesting.py - [Assert - Chai](https://www.chaijs.com/api/assert/)
