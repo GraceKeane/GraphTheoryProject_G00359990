@@ -87,6 +87,7 @@ I had problems submitting my code to git. Usually when I committed my code it pu
 * Showed me the various regular expressions and functions - [Regular Expressions](https://www.tldp.org/LDP/Bash-Beginners-Guide/html/sect_04_01.html) 
 * Shows the hierarchy of regex precedence - [C Operator Precedence](https://en.cppreference.com/w/c/language/operator_precedence)
 * Simple example of getting raw input from a user in prompt class - [raw_input function in Python](https://stackoverflow.com/a/5563119/13407257)
+* Showed me differant examples of how to use the assert keyword when testing in finaltesting.py - [Assert - Chai](https://www.chaijs.com/api/assert/)
 
 ## Class videos implemented
 ### I implemented the code from the videos separately so that I can see how the application can be broken up into smaller parts
