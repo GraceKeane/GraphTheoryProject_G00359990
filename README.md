@@ -37,39 +37,6 @@ For this project I am instructed to implement Thompson’s construction algorith
 7) <b>VSCREADME.txt</b> - I created a README using visual studio code.
 8) <b>Thompson's expressions & descriptions</b> - Contains useful diagrams and descriptions of regular expression operators. I created most of these diagrams myself with the use of Microsoft paint.
 
-## What I learned 
-* The syntax for regular expressions
-* How a regex engine works
-* How to understand the internals of the Google Cloud SSH engine
-* How to break a complex problem into smaller problems
-* Different ways of thinking about the problem
-* Difference  between regular expressions
-* How to create a README using Visual studio code
-* How to create and merge branches in GitHub
-* How to use words as links in GitHub README
-* How to add images and videos to a git readMe.md
-* How to create a table of contents containing headings and subheadings in Git
-* Create an NFA from a regex. 
-
-## Problems faced & overcome
-I had problems submitting my code to git. Usually when I committed my code it published numerous files to my GitHub repository that I did not need. I then had to delete them all again. I researched ways on how to commit my code correctly using git and I found this video helped me a lot. It showed me how to commit the changes that I needed to GitHub with the use of branches and then merging to the master branch.   
-
-1.	Git branch myBranchName (Creating a new branch)
-2.	Git branch (Displaying all branches created)
-3.	Git checkout myBranchName (Switches to the new branch created)
-4.	Git add .
-5.	Git commit -m “Comments go here”
-6.	Git push --set-upstream origin branch1
-7.	Enter username
-8.	Enter password
-9.	Go to your repository on [GitHub](https://github.com/)
-10.	Click “Compare & pull request”
-11.	Click “Create pull request”
-12.	Click “Merge pull request”
-13.	Click “Confirm merge”
-
-[Research link](https://www.youtube.com/watch?v=JTE2Fn_sCZs)
-
 ## References
 * Describing what an NFA is essentially - [Nondeterministic finite automaton](https://en.wikipedia.org/wiki/Nondeterministic_finite_automaton)
 * How to implementing a regular expression engine - [Implementing a Regular Expression Engine](https://deniskyashif.com/2019/02/17/implementing-a-regular-expression-engine/)
@@ -88,25 +55,6 @@ I had problems submitting my code to git. Usually when I committed my code it pu
 * Shows the hierarchy of regex precedence - [C Operator Precedence](https://en.cppreference.com/w/c/language/operator_precedence)
 * Simple example of getting raw input from a user in prompt class - [raw_input function in Python](https://stackoverflow.com/a/5563119/13407257)
 * Showed me differant examples of how to use the assert keyword when testing in finaltesting.py - [Assert - Chai](https://www.chaijs.com/api/assert/)
-
-## Class videos implemented
-### I implemented the code from the videos separately so that I can see how the application can be broken up into smaller parts
-
-Introduction to Python => https://github.com/GraceKeane/GraphTheory
-
-
-Automaton fragments => https://github.com/GraceKeane/Automaton-fragments                                                                    
-
-Shunting yard algorithm => https://github.com/GraceKeane/Shunting-yard-algorithm                                                                
-
-Using Python => https://github.com/GraceKeane/Python                                                                                              
-
-Matching a regular expression with a string => https://github.com/GraceKeane/Python-Matching
-
-Classes for Thompson => https://github.com/GraceKeane/Classes-for-Thompsons-algorithm
-
-
-Cleaning & testing => https://github.com/GraceKeane/Cleaning-Testing
 
 ## Technologies used
 * Google cloud SSH engine
